@@ -46,167 +46,9 @@ $(document).ready(function() {
 
     $(window).on('scroll', function () {
 
-
-        /**************************************
-                SEASONAL BANNER FIXATION
-         *************************************/
-
-
-        if ($(window).scrollTop() >= 1500 && $(window).scrollTop() < 2800) {
-            $("#background2").css({
-                'position': 'fixed',
-                'top': '30px'
-            });
-
-            $("#background2-title").css({
-                'position': 'fixed',
-                'top': '705px'
-            });
-
-            $("#sermon-series-label").css({
-                'position': 'fixed',
-                'top': '705px'
-            });
-
-            $("#listen-btn").css({
-                'position': 'fixed',
-                'top': '705px'
-            });
-
-            $("#event-row").css('margin-top', '80%');
-        }
-        else {
-            $("#background2").css({
-                'position': 'relative',
-                'top': '0'
-            });
-
-            $("#background2-title").css({
-                'position': 'relative',
-                'top': '0'
-            });
-
-            $("#sermon-series-label").css({
-                'position': 'absolute',
-                'top': ''
-            });
-
-            $("#listen-btn").css({
-                'position': 'absolute',
-                'top': ''
-            });
-
-            $("#event-row").css('margin-top', '49%');
-        }
-
-
-
-        /**************************************
-                MEDIA BANNER FIXATION
-         *************************************/
-
-
-
-        if ($(window).scrollTop() >= 3935 && $(window).scrollTop() < 4800) {
-            $("#media-background").css({
-                'position': 'fixed',
-                'top': '0'
-            });
-
-            $("#media-title").css({
-                'position': 'fixed',
-                'top': '0'
-            });
-
-            $("#media-border-sm").css({
-                'position': 'fixed',
-                'top': '0'
-            });
-
-            $("#cam-mic-cont").css({
-                'position': 'fixed',
-                'top': '0'
-            });
-
-            $("#social-media").css({
-                'position': 'fixed',
-                'top': '0'
-            });
-
-            $("#ministries-row").css('margin-top', '70%');
-        }
-        else {
-            $("#media-background").css({
-                'position': 'relative',
-                'top': '0'
-            });
-
-            $("#media-title").css({
-                'position': 'absolute',
-                'top': ''
-            });
-
-            $("#media-border-sm").css({
-                'position': 'absolute',
-                'top': ''
-            });
-
-            $("#cam-mic-cont").css({
-                'position': 'absolute',
-                'top': ''
-            });
-
-            $("#social-media").css({
-                'position': 'absolute',
-                'top': ''
-            });
-
-            $("#ministries-row").css('margin-top', '5%');
-        }
-
-
-
-        /**************************************
-                SEASONAL Z-INDEX CHANGES
-         *************************************/
-
-
-
-        if ($(window).scrollTop() >= 1950) {
-            $("#listen-btn").css({'z-index':'-1'});
-        }
-        else{
-            $("#listen-btn").css({'z-index':'0'});
-        }
-
-
-
-        /**************************************
-                MEDIA ITEM Z-INDEX CHANGES
-         *************************************/
-
-
-
-        if ($(window).scrollTop() >= 4320) {
-            $("#cam-mic-cont").css({'z-index':'-1'});
-        }
-        else {
-            $("#cam-mic-cont").css({'z-index':'0'});
-        }
-
-        if ($(window).scrollTop() >= 4125) {
-            $("#social-media").css({'z-index': '-1'});
-        }
-        else {
-            $("#social-media").css({'z-index': '0'});
-        }
-
-
-
         /**************************************
                     NAVBAR ITEM SELECT
          *************************************/
-
 
 
         if($(window).scrollTop() >= 700 && $(window).scrollTop() < 2500) {
@@ -267,14 +109,14 @@ $(document).ready(function() {
     $("#camera-photo")
         .on('mouseenter', function() {
             $("#camera-title").animate({
-                marginLeft: '70%',
+                marginLeft: '45%',
                 width: '80px'
             }, 500).css({'visibility': 'visible'});
         }).on('mouseleave', function() {
         $("#camera-title").animate({
             width: '0',
-            marginLeft: '120%'
-        }, 300)
+            marginLeft: '90%'
+        }, 300);
         setTimeout(function () {
             $("#camera-title").css({'visibility': 'hidden'});
         },300);
@@ -284,12 +126,12 @@ $(document).ready(function() {
         .on('mouseenter', function() {
             $("#mic-title").clearQueue().animate({
                 width: '100px',
-                marginLeft: '32%'
+                marginLeft: '10%'
             }, 500).css({'visibility': 'visible'});
         }).on('mouseleave', function() {
         $("#mic-title").animate({
             width: '0',
-            marginLeft: '80%'
+            marginLeft: '65%'
         }, 300);
         setTimeout(function () {
             $("#mic-title").css({'visibility': 'hidden'});
