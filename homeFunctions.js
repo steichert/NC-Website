@@ -3,16 +3,26 @@
  */
 
 $(document).ready(function() {
+
     $("#navItem-dropdown").css({
-        'visibility':'visible', 'height':'0'
+        'visibility':'visible',
+        'height':'0'
     }).hide();
 
     $("a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
+            var scrollTop;
+
+            if (hash == "#media-title")
+                scrollTop = $("#media-title").offset().top - 100;
+            else
+                scrollTop = $(hash).offset().top;
+
             $('html,body').animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: scrollTop
+
             }, 500, function () {
                 window.location.hash = hash;
             });
@@ -47,7 +57,7 @@ $(document).ready(function() {
     $(window).on('scroll', function () {
 
         /**************************************
-                    NAVBAR ITEM SELECT
+                    Navbar Item Select
          *************************************/
 
 
@@ -106,7 +116,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#camera-photo")
+    $("#photo-link")
         .on('mouseenter', function() {
             $("#camera-title").animate({
                 marginLeft: '45%',
@@ -122,9 +132,15 @@ $(document).ready(function() {
         },300);
     });
 
-    $("#mic-photo")
+    $("#camera-title").on('mouseenter',function(){
+        $("#camera-photo").css('-webkit-filter','blur(6px)');
+    }).on('mouseleave',function() {
+        $("#camera-photo").css('-webkit-filter','');
+    });
+
+    $("#sermon-link")
         .on('mouseenter', function() {
-            $("#mic-title").clearQueue().animate({
+            $("#mic-title").animate({
                 width: '100px',
                 marginLeft: '10%'
             }, 500).css({'visibility': 'visible'});
@@ -136,6 +152,12 @@ $(document).ready(function() {
         setTimeout(function () {
             $("#mic-title").css({'visibility': 'hidden'});
         },300);
+    });
+
+    $("#mic-title").on('mouseenter',function(){
+        $("#mic-photo").css('-webkit-filter','blur(6px)');
+    }).on('mouseleave',function() {
+        $("#mic-photo").css('-webkit-filter','');
     });
 
     $('.dropdown').on('show.bs.dropdown', function() {

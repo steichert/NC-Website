@@ -19,17 +19,17 @@ h2:before {
     visibility: hidden;
 }
 
-.parallax-window {
-    min-height: 800px;
-    background: transparent;
-}
-
 #our-mission-title:before {
     display: block;
     content: " ";
     margin-top: -140px;
     height: 140px;
     visibility: hidden;
+}
+
+.parallax-window {
+    min-height: 800px;
+    background: transparent;
 }
 
 #homeNav {
