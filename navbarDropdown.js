@@ -13,6 +13,11 @@ $(document).ready(function() {
             $("#welcome-banner").css('margin-top','-19px');
             $("#nav-list").show();
             $("#collapse-btn").hide();
+
+            setTimeout(function () {
+                $("#arrow-up-btn").css({'visibility': 'visible'});
+            },100);
+
             navbar.css('background', 'rgba(255, 255, 255, 0.75)');
             $("#nav-logo").css('height','40px');
             $("nav div ul li a").css('color','#3c3c3c');
@@ -31,6 +36,11 @@ $(document).ready(function() {
             $("#nav-list").hide();
             $("#collapse-btn").show();
             $("#welcome-banner").css('margin-top', '-100px');
+
+            setTimeout(function () {
+                $("#arrow-up-btn").css({'visibility': 'hidden'});
+            },100);
+
             navbar.css('background', 'none');
             $("#nav-logo").css('height','60px');
             $("nav div ul li a").css('color','#fff');
