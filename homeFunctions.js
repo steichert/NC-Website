@@ -51,42 +51,42 @@ $(document).ready(function() {
          *************************************/
 
 
-        if($(window).scrollTop() >= 700 && $(window).scrollTop() < 2500) {
+        if($(window).scrollTop() >= 700 && $(window).scrollTop() < 2300) {
             $("#nav-about-us").css({'font-weight': 'bolder'});
         }
         else {
             $("#nav-about-us").css({'font-weight': 'normal'});
         }
 
-        if ($(window).scrollTop() >= 2500 && $(window).scrollTop() < 3170) {
+        if ($(window).scrollTop() >= 2300 && $(window).scrollTop() < 2970) {
             $("#nav-events").css({'font-weight': 'bolder'});
         }
         else {
             $("#nav-events").css({'font-weight': 'normal'});
         }
 
-        if ($(window).scrollTop() >= 3170 && $(window).scrollTop() < 3905) {
+        if ($(window).scrollTop() >= 2970 && $(window).scrollTop() < 3705) {
             $("#nav-activities").css({'font-weight': 'bolder'});
         }
         else {
             $("#nav-activities").css({'font-weight': 'normal'});
         }
 
-        if ($(window).scrollTop() >= 3905 && $(window).scrollTop() < 4780) {
+        if ($(window).scrollTop() >= 3705 && $(window).scrollTop() < 4580) {
             $("#nav-media").css({'font-weight': 'bolder'});
         }
         else {
             $("#nav-media").css({'font-weight': 'normal'});
         }
 
-        if ($(window).scrollTop() >= 4780 && $(window).scrollTop() < 5350) {
+        if ($(window).scrollTop() >= 4580 && $(window).scrollTop() < 5150) {
             $("#nav-ministries").css({'font-weight': 'bolder'});
         }
         else {
             $("#nav-ministries").css({'font-weight': 'normal'});
         }
 
-        if ($(window).scrollTop() >= 5350) {
+        if ($(window).scrollTop() >= 5150) {
             $("#nav-contact").css({'font-weight': 'bolder'});
         }
         else {
