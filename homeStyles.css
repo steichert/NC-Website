@@ -1,0 +1,533 @@
+h1, .jumbotron h1,
+h2, .jumbotron h2,
+h3, .jumbotron h3,
+h4, .jumbotron h4,
+p, a, #ministries-title {
+    font-family: "NexaFontFabric", sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+h3:before,
+h2:before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+}
+
+#our-mission-title:before {
+    display: block;
+    content: " ";
+    margin-top: -140px;
+    height: 140px;
+    visibility: hidden;
+}
+
+#homeNav {
+    border-color: transparent !important;
+    background: none;
+}
+
+#collapse-btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+#collapse-btn:active {
+    background: transparent;
+}
+
+.navbar,
+.container{
+    border-radius: 0 !important;
+}
+
+#nav-list {
+    margin-right: 25%;
+}
+
+nav div ul li {
+    margin-top: 2%;
+    margin-left: 10px;
+}
+
+nav div ul li a {
+    color: #fff;
+    font-size: 112%;
+}
+
+.container-fluid {
+    border-radius: 0;
+}
+
+#nav-logo {
+    margin-top: -5%;
+    margin-left: 30%;
+}
+
+@font-face {
+    font-family: "NexaFontFabric";
+    src: url("../fonts/nexa/NexaLight.otf") format('opentype'),
+        url("../fonts/nexa/NexaLight.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "NexaFontFabric";
+    font-weight: bold;
+    src: url("../fonts/nexa/NexaBold.otf") format('opentype'),
+        url("../fonts/nexa/NexaBold.ttf") format('truetype');
+}
+
+#welcome-letters{
+    z-index: 2;
+    text-align: center;
+    font-size: 450%;
+    font-family: "NexaFontFabric", sans-serif;
+    color: #fff;
+    margin-top: -30%;
+}
+
+#welcome-letters-fullstop {
+    color: #4cae4c;
+}
+
+#welcome-banner {
+    margin: -100px 0 0 0;
+    width: 100%;
+}
+
+#menuDownLink {
+    width: 10%;
+}
+
+#menuDown {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 300%;
+    color: gray;
+}
+
+a:link, a:hover {
+    text-decoration: none !important;
+}
+
+#menuDown:hover {
+    color: lightgray;
+}
+
+#navItem-dropdown {
+    visibility: hidden;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 5%;
+    width: 12%;
+    margin-left: 85.55%;
+    margin-top: -46.5%;
+}
+
+#navItem-list {
+    list-style-type: none;
+}
+
+#navItem-list li {
+    margin-top: 20%;
+    margin-left: -20%;
+}
+
+#navItem-list li a {
+    color: #fff;
+    font-size: 112%;
+}
+
+.container-fluid,
+.container {
+    z-index: 5;
+}
+
+#events-jumbo,
+#ministries-jumbo {
+    background-color: #fff;
+}
+
+#mission-jumbo,
+#activities-jumbo,
+#contact-jumbo {
+    background-color: #f0f0f0;
+}
+
+#mission-row {
+    margin-top: 6%;
+}
+
+#our-mission-title {
+    margin-top: 10%;
+}
+
+#more-about-us-btn {
+    position: relative;
+    margin-left: 44%;
+    margin-bottom: 10%;
+}
+
+#more-about-us-btn:hover,
+#activities-btn:hover {
+    background-color: #4cae4c;
+    color: #fff;
+    border-color: #67b168;
+
+}
+
+#arrow-up-btn {
+    z-index: 3;
+    position: fixed;
+    top: 90%;
+    margin-left: 95%;
+    background-color: #d0d0d0;
+    visibility: hidden;
+}
+
+#arrow-up-icon {
+    color: #3c3c3c;
+}
+
+#arrow-up-btn:hover {
+    background-color: #d0d0d0;
+}
+
+#background2 {
+    z-index: -5;
+    margin-top: -3%;
+    width: 100%;
+    position: relative;
+}
+
+#background2-title {
+    z-index: -1;
+    text-align: center;
+    font-size: 480%;
+    font-family: 'Amatica Sc', 'sans-serif';
+    color: #3c3c3c;
+    margin-top: -600px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+}
+
+#sermon-series-label {
+    z-index: -1;
+    font-family: 'Amatica Sc', 'sans-serif';
+    font-size: 250%;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 35%;
+    color: #fff;
+}
+
+#listen-btn {
+    z-index: 0;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 58%;
+    background: none;
+    border-color: #fff;
+    vertical-align: middle;
+}
+
+#listen-btn:hover{
+    background-color: #4cae4c;
+    border-color: #67b168;
+}
+
+.border {
+    border-bottom: groove;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+.border-sm {
+    border-bottom: groove;
+    width: 25%;
+    margin-left: 37.5%;
+    margin-bottom: 5%;
+}
+
+
+#event-row {
+    margin-top: 50%;
+    margin-bottom: 5%;
+}
+
+#events-title {
+    margin-top: 5%;
+}
+
+.card {
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid lightgray;
+    margin-bottom: 15%;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card-block a {
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+#activities-row {
+    margin-top: -10%;
+    /*margin-bottom: 5%;*/
+}
+
+#activities-jumbo {
+    margin-bottom: 0;
+}
+
+#activities-title {
+    margin-top: 5%;
+    /*margin-bottom: 5%;*/
+}
+
+.img-circle {
+    margin-left: 22%;
+    position: relative;
+}
+
+#blur-exp:hover .img-circle,
+#blur-nckidz:hover .img-circle,
+#blur-lg:hover .img-circle {
+    -webkit-filter: blur(6px);
+    transition: 0.2s -webkit-filter linear;
+}
+
+#exp-label {
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 27%;
+    visibility: hidden;
+}
+
+#blur-exp:hover #exp-label {
+    visibility: visible;
+}
+
+#nckidz-label {
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 37%;
+    visibility: hidden;
+}
+
+#blur-nckidz:hover #nckidz-label {
+    visibility: visible;
+}
+
+#lifegroup-label {
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 32%;
+    visibility: hidden;
+}
+
+#blur-lg:hover #lifegroup-label {
+    visibility: visible;
+}
+
+#activities-btn {
+    margin-top: 10%;
+    margin-left: 44%;
+    margin-bottom: 10%;
+}
+
+#media-row {
+    z-index: 0;
+}
+
+#media-background {
+    z-index: -5;
+    width: 100%;
+    position: relative;
+}
+
+#media-title {
+    z-index: -1;
+    font-family: "NexaFontFabric", sans-serif;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 46%;
+}
+
+#media-border-sm {
+    z-index: -1;
+    position: absolute;
+    margin-top: 12%;
+    border: 1px solid dimgrey;
+}
+
+#media-jumbo {
+    margin-bottom: -10%;
+}
+
+#cam-mic-cont {
+    z-index: 0;
+}
+
+#mic-photo,
+#camera-photo {
+    position: absolute;
+    margin-top: 75%;
+}
+
+#mic-photo {
+    margin-left: 10%;
+}
+
+#mic-photo:hover,
+#camera-photo:hover {
+    -webkit-filter: blur(6px);
+    transition: 0.2s -webkit-filter linear;
+}
+
+#camera-title,
+#mic-title {
+    z-index: 1;
+    margin-top: 108%;
+    position: absolute;
+    color: #fff;
+    visibility: hidden;
+}
+
+#camera-title {
+    margin-left: 120%;
+    width: 0;
+}
+
+#mic-title {
+    margin-left: 80%;
+    width: 0;
+}
+
+#camera-photo {
+    margin-left: 45%;
+}
+
+#social-media {
+    z-index: 1;
+    position: absolute;
+    margin-left: 44.5%;
+    margin-top: 45%;
+}
+
+#ministries-row {
+    z-index: 2;
+}
+
+#ministries-title {
+    margin-top: 10%;
+}
+
+.card img {
+    margin-bottom: 5%;
+}
+
+.ministry-card {
+    margin-top: 10%;
+    border-radius: 5%;
+    box-shadow: 1px 1px 1px lightgrey;
+}
+
+#oasis-logo {
+    margin-left: 12%;
+}
+
+#paradigm-logo {
+    margin-left: 22%;
+}
+
+#ministries-footer {
+    margin-bottom: 10%;
+}
+
+#navbar-footer-home.navbar.navbar-inverse {
+    margin-bottom: -1% !important;
+    border: none;
+    height: 100px;
+}
+
+.thumbnail {
+    height: 350px;
+    border: 3px groove lightgray !important;
+}
+
+.thumbnail .caption {
+    position: absolute;
+}
+
+.menuDown {
+    font-size: 180%;
+    display: block;
+    margin-left: 45%;
+    margin-right: auto;
+    color: #3c3c3c;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuDown-ministries {
+    font-size: 180%;
+    display: block;
+    margin-left: 45%;
+    margin-right: auto;
+    color: #3c3c3c;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuDown-ministries:hover {
+    color: grey;
+}
+
+#contact-jumbo {
+    margin-bottom: 0 !important;
+}
+
+#contact-title {
+    margin-top: 5%;
+}
+
+#contact-content {
+    margin-bottom: 10%;
+}
+
+#addressIcon {
+    color: #3eb25b;
+    font-size: 100%;
+    margin: 0 auto;
+}
+
+#map {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 500px;
+    height:400px;
+    background-color: grey;
+}
+
