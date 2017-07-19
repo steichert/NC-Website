@@ -6,6 +6,10 @@ p, a, #ministries-title {
     font-family: "NexaFontFabric", sans-serif;
 }
 
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
 h3:before,
 h2:before {
     display: block;
@@ -180,8 +184,21 @@ a:link, a:hover {
 
 }
 
-h1, h2, h3, h4, p {
-    text-align: center;
+#arrow-up-btn {
+    z-index: 3;
+    position: fixed;
+    top: 90%;
+    margin-left: 95%;
+    background-color: #d0d0d0;
+    visibility: hidden;
+}
+
+#arrow-up-icon {
+    color: #3c3c3c;
+}
+
+#arrow-up-btn:hover {
+    background-color: #d0d0d0;
 }
 
 #background2 {
