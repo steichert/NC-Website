@@ -36,6 +36,17 @@ a:link, a:hover {
     url("../fonts/nexa/NexaBold.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "JosefineSans";
+    src: url("../fonts/josefin-sans/JosefinSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "JosefineSans";
+    font-weight: bold;
+    src: url("../fonts/josefin-sans/JosefinSans-Bold.ttf") format('truetype');
+}
+
 .container-fluid,
 .container {
     z-index: 5;
@@ -162,9 +173,9 @@ nav div ul li a {
     z-index: 2;
     text-align: center;
     font-size: 450%;
-    font-family: "NexaFontFabric", sans-serif;
+    font-family: "JosefineSans", sans-serif;
     color: #fff;
-    margin-top: -30%;
+    margin-top: -29%;
 }
 
 #welcome-letters-fullstop {
