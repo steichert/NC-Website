@@ -19,8 +19,7 @@
                     <img id="nav-logo" src="assets/logos/nc%20logo%20full-greenandgrey.png" height="120">
                 </a>
             </div>
-            <button id="collapse-btn" type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse"
-                    data-target="#navItems"></button>
+            <button id="collapse-btn" type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" onclick="openNav()"></button>
             <div class="collapse navbar-collapse" id="navItems">
                 <ul id="nav-list" class="nav navbar-nav navbar-right">
                     <li id="nav-about-us"><a href="#our-mission-title">About Us</a></li>
@@ -40,24 +39,24 @@
             <!--<div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/light-photography-wallpaper-phone.jpg" id="welcome-banner"></div>-->
             <h1 id="welcome-letters"><b>WELCOME</b> HOME<strong id="welcome-letters-fullstop">.</strong></h1>
             <a id="menuDownLink" href="#our-mission-title"><span id="menuDown" class="glyphicon glyphicon-menu-down"></span></a>
-            <div id="navItem-dropdown">
-                <ul id="navItem-list">
-                    <li id="sideNav-about-us"><a href="#our-mission-title">About Us</a></li>
-                    <li><a href="#event-row">Events</a></li>
-                    <li><a href="#activities-title">Activities</a></li>
-                    <li><a href="#media-title">Media</a></li>
-                    <li><a href="#ministries-title">Ministries</a></li>
-                    <li><a href="#contact-title">Contact Us</a></li>
-                </ul>
+            <div id="sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#our-mission-title" onclick="closeNav()">About Us</a>
+                <a href="#event-row" onclick="closeNav()">Events</a>
+                <a href="#activities-title" onclick="closeNav()">Activities</a>
+                <a href="#media-title" onclick="closeNav()">Media</a>
+                <a href="#ministries-title" onclick="closeNav()">Ministries</a>
+                <a href="#affiliations-title" onclick="closeNav()">Global Family</a>
+                <a href="#contact-title" onclick="closeNav()">Contact Us</a>
             </div>
         </div>
         <div id="mission-row" class="row">
             <div id="mission-jumbo" class="jumbotron">
-                <h3 id="our-mission-title"><b>Our Mission</b></h3>
+                <h3 id="our-mission-title"><b>Our Mission</b></h3><br>
                 <p id="our-mission-parag">To connect people to God through Discipleship,<br>
                     to one another through His community,<br> and to the world through His mission.</p>
                 <p id="mission-border" class="border"></p><br>
-                <h3 id="our-vision-title"><b>Our Vision</b></h3>
+                <h3 id="our-vision-title"><b>Our Vision</b></h3><br>
                 <p id="our-vision-parag">To become His community, to impact our community.</p><br><br><br><br>
                 <a id="more-about-us-btn" href="" class="btn btn-default"><h4>More about us</h4></a>
             </div>
@@ -173,9 +172,15 @@
             </div>
             <div id="social-media" class="row">
                 <p>
-                    <a class="social-media-logo" href=""><img id="fb-logo" src="assets/logos/fb-logo.png" width="45"></a>
-                    <a class="social-media-logo" href=""><img src="assets/logos/instagram-logo.png" width="60"></a>
-                    <a class="social-media-logo" href=""><img src="assets/logos/twitter-logo.png" width="51"></a>
+                    <a class="social-media-logo" href="https://www.facebook.com/NewCreationJHB/" target="_blank">
+                        <img id="fb-logo" src="assets/logos/fb-logo.png" width="45">
+                    </a>
+                    <a class="social-media-logo" id="instagram-logo" href="https://www.instagram.com/newcreation_jhb/" target="_blank">
+                        <img src="assets/logos/instagram-logo.png" width="60">
+                    </a>
+                    <a class="social-media-logo" href="https://twitter.com/newcreation_jhb" target="_blank">
+                        <img src="assets/logos/twitter-logo.png" width="51">
+                    </a>
                 </p>
             </div>
             <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/media-background2.jpeg" id="media-background"></div>
@@ -192,8 +197,7 @@
                             <h4 class="card-title">Ministry Title</h4>
                             <p class="card-text" style="font-size: 110%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque, dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</p>
                             <a href="#" class="btn btn-default">
-                                <span class="glyphicon glyphicon-globe"></span>
-                                &nbsp;Website
+                                <span class="glyphicon glyphicon-globe"></span>&nbsp;Website
                             </a>
                         </div>
                     </div>
@@ -229,44 +233,74 @@
                 <p id="ministries-footer" style="color: #fff">.</p>
             </div>
         </div>
+        <div id="affiliations-row" class="row">
+            <div id="affiliations-jumbo" class="jumbotron">
+                <h2 id="affiliations-title">Global Family</h2>
+                <p class="border-sm"></p><br><br>
+                <div class="col-sm-4">
+                    <a href="https://www.cotn.org/" target="_blank">
+                        <img id="cotn-logo" src="assets/logos/cotnlogo.png" width="150">
+                    </a>
+                </div>
+                <div class="col-sm-8">
+                    <h4 style="text-align: left">
+                        <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br>
+                        Nulla ex turpis, ullamcorper ac porta et, malesuada vitae orci.<br><br>
+                        <a href="https://www.cotn.org/" target="_blank" class="btn btn-default">
+                            <span class="glyphicon glyphicon-globe"></span>&nbsp;Website
+                        </a>
+                    </h4>
+                </div>
+                <p id="affiliations-footer" style="color: #fff">.</p>
+            </div>
+        </div>
         <div id="#contact-row" class="row">
             <div id="contact-jumbo" class="jumbotron">
                 <h2 id="contact-title">Contact Us</h2>
                 <p class="border-sm"></p><br><br>
                 <div id="contact-content" class="row">
-                    <div id="contact-address" class="col-sm-6">
+                    <div id="contact-address" class="col-sm-4">
                         <p>
                             <span id="addressIcon" class="glyphicon glyphicon-home small"></span>&nbsp;Campus Address:
                             <br><sub>4 Gemsbok Rd<br>Robin Hills<br>Randburg<br>2194</sub>
                         </p>
                     </div>
-                    <div id="contact-phone" class="col-sm-6">
-                        <p>
-                            <span id="phone-icon" class="glyphicon glyphicon-earphone"></span>&nbsp;Tel:
-                            <br><sub>011 792 1151<br>011 792 1380</sub>
-                        </p>
-                    </div>
-                </div>
-                <div id="contact-content-addresses" class="row">
-                    <div id="contact-office" class="col-sm-6">
+                    <div id="contact-office" class="col-sm-4">
                         <p>
                             <span id="office-icon" class="glyphicon glyphicon-briefcase"></span>&nbsp;Office Address:
                             <br><sub>48 Winston Ave<br>Robin Hills<br>Randburg<br>2194</sub>
                         </p>
                     </div>
-                    <div id="contact-postal" class="col-sm-6">
+                    <div id="contact-postal" class="col-sm-4">
                         <p>
                             <span id="postal-icon" class="glyphicon glyphicon-envelope"></span>&nbsp:Postal Address:
                             <br><sub>P.O. Box 1638<br>Cresta<br>South Africa<br>2118</sub>
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div id="contact-banking" class="col-sm-6">
+                <div id="contact-content-addresses" class="row">
+                    <div id="contact-phone" class="col-sm-4">
+                        <p>
+                            <span id="phone-icon" class="glyphicon glyphicon-earphone"></span>&nbsp;Tel:
+                            <br><sub>011 792 1151<br>011 792 1380</sub>
+                        </p>
+                    </div>
+                    <div id="contact-email" class="col-sm-4">
+                        <p>
+                            <span id="email-icon" class="glyphicon glyphicon-send"></span>&nbsp;Email:
+                            <br><sub>admin@newcreation.co.za</sub>
+                        </p>
+                    </div>
+                    <div id="contact-banking" class="col-sm-4">
                         <p>
                             <span id="bank-icon" class="glyphicon glyphicon-piggy-bank"></span>&nbsp;Banking Details:
                             <br><sub>First National Bank, Randburg<br>Branch Code: 254005<br>Account#: 50410005934</sub>
                         </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img id="nc-snapscan" src="assets/images/nc-snapscan.png" width="220">
                     </div>
                 </div>
                 <div id="map"></div>
@@ -286,7 +320,6 @@
         </nav>
     </footer>
 
-    <!--<script src="menuDownGlow.js"></script>-->
     <script src="javascript/homeFunctions.js"></script>
     <script src="javascript/navbarDropdown.js"></script>
     <script type="text/javascript" src="javascript/map.js"></script>

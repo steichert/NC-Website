@@ -15,16 +15,17 @@ $(document).ready(function() {
             var hash = this.hash;
             var scrollTop;
 
-            if (hash == "#media-title")
+            if (hash == "#media-title") {
                 scrollTop = $("#media-title").offset().top - 100;
-            else
+            }
+            else {
                 scrollTop = $(hash).offset().top;
+            }
 
             $('html,body').animate({
                 scrollTop: scrollTop
-
             }, 500, function () {
-                window.location.hash = hash;
+                // window.location.hash = hash;
             });
         }
     });
@@ -166,3 +167,11 @@ $(document).ready(function() {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
 });
+
+function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
