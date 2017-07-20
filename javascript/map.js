@@ -6,7 +6,7 @@ function myMap() {
 
     var mapOptions = {
         center: new google.maps.LatLng(-26.114039, 27.980182),
-        zoom: 15,
+        zoom: 14,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 

@@ -119,7 +119,7 @@ nav div ul li a {
 }
 
 #nav-logo {
-    margin-top: -20%;
+    margin-top: -10%;
     margin-left: 20%;
 }
 
@@ -596,17 +596,37 @@ nav div ul li a {
 
 #contact-jumbo {
     margin-bottom: 0 !important;
+    padding: 0 0;
 }
 
 #contact-title {
     margin-top: 5%;
 }
 
-#contact-content {
-    margin-bottom: 10%;
+#contact-content,
+#contact-content-addresses {
+    margin-bottom: 2%;
 }
 
-#addressIcon {
+#contact-phone p,
+#contact-address p,
+#contact-office p,
+#contact-postal p,
+#contact-banking p {
+    text-align: left;
+}
+
+#contact-address p,
+#contact-office p,
+#contact-banking p {
+    margin-left: 15%;
+}
+
+#addressIcon,
+#phone-icon,
+#office-icon,
+#postal-icon,
+#bank-icon {
     color: #3eb25b;
     font-size: 100%;
     margin: 0 auto;
@@ -614,9 +634,8 @@ nav div ul li a {
 
 #map {
     margin-top: 5%;
-    margin-left: 10%;
-    width: 500px;
-    height:400px;
+    width: 100%;
+    height:350px;
     background-color: grey;
 }
 

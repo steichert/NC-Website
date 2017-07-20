@@ -21,8 +21,9 @@ $(document).ready(function() {
             navbar.css('background', 'rgba(255, 255, 255, 0.75)');
 
             $("#nav-logo").css({
-                'height':'50px',
-                'color':'#3c3c3c'
+                'height':'60px',
+                'color':'#3c3c3c',
+                'marginTop':'-15%'
             });
 
             $("nav div ul li a").css('color','#3c3c3c');
@@ -46,8 +47,9 @@ $(document).ready(function() {
             navbar.css('background', 'none');
 
             $("#nav-logo").css({
-                'height':'90px',
-                'color':'#fff'
+                'height':'120px',
+                'color':'#fff',
+                'marginTop':'-10%'
             });
 
             $("nav div ul li a").css('color','#fff');

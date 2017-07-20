@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#welcome-banner">
-                    <img id="nav-logo" src="assets/logos/logo.png" height="60">
+                    <img id="nav-logo" src="assets/logos/nc%20logo%20full-greenandgrey.png" height="120">
                 </a>
             </div>
             <button id="collapse-btn" type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse"
@@ -37,11 +37,12 @@
     <div class="container-fluid">
         <div class="row">
             <img id="welcome-banner" src="assets/images/light-photography-wallpaper-phone.jpg">
+            <!--<div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/light-photography-wallpaper-phone.jpg" id="welcome-banner"></div>-->
             <h1 id="welcome-letters"><b>WELCOME</b> HOME<strong id="welcome-letters-fullstop">.</strong></h1>
             <a id="menuDownLink" href="#our-mission-title"><span id="menuDown" class="glyphicon glyphicon-menu-down"></span></a>
             <div id="navItem-dropdown">
                 <ul id="navItem-list">
-                    <li><a href="#our-mission-title">About Us</a></li>
+                    <li id="sideNav-about-us"><a href="#our-mission-title">About Us</a></li>
                     <li><a href="#event-row">Events</a></li>
                     <li><a href="#activities-title">Activities</a></li>
                     <li><a href="#media-title">Media</a></li>
@@ -131,19 +132,19 @@
                 <div class="col-sm-4">
                     <a id="blur-nckidz" href="">
                         <h4 id="nckidz-label"><b>NC KIDZ</b></h4>
-                        <img id="nckidz-image" class="img-circle" src="assets/images/nc-kidz.png" alt="nc kidz" width="200">
+                        <img id="nckidz-image" class="img-circle" src="assets/images/activities-kidz.png" alt="nc kidz" width="300">
                     </a>
                 </div>
                 <div class="col-sm-4">
                     <a id="blur-exp" href="">
                         <h4 id="exp-label"><b>EXPLOITS YOUTH</b></h4>
-                        <img id="exp-image" class="img-circle" src="assets/images/exploits-youth.png" alt="exploits" width="200">
+                        <img id="exp-image" class="img-circle" src="assets/images/activities-youth.png" alt="youth" width="300">
                     </a>
                 </div>
                 <div class="col-sm-4">
                     <a id="blur-lg" href="">
                         <h4 id="lifegroup-label"><b>LIFE GROUPS</b></h4>
-                        <img id="lifegroup-image" class="img-circle" src="assets/images/life-groups.png" alt="life groups" width="200">
+                        <img id="lifegroup-image" class="img-circle" src="assets/images/activities-lifegroups.png" alt="lifegroups" width="300">
                     </a>
                 </div>
                 <a id="activities-btn" href="" class="btn btn-default"><h4>Find out more</h4></a>
@@ -233,16 +234,42 @@
                 <h2 id="contact-title">Contact Us</h2>
                 <p class="border-sm"></p><br><br>
                 <div id="contact-content" class="row">
-                    <div class="col-lg-6">
-                        <p style="text-align: left; margin-top: 5%;">
-                            <span id="addressIcon" class="glyphicon glyphicon-home small"></span>&nbsp;Address:
-                            <br><sub>4 Gemsbok Rd, Robin Hills, Randburg, 2194</sub>
+                    <div id="contact-address" class="col-sm-6">
+                        <p>
+                            <span id="addressIcon" class="glyphicon glyphicon-home small"></span>&nbsp;Campus Address:
+                            <br><sub>4 Gemsbok Rd<br>Robin Hills<br>Randburg<br>2194</sub>
                         </p>
                     </div>
-                    <div class="col-lg-6">
-                        <div id="map"></div>
+                    <div id="contact-phone" class="col-sm-6">
+                        <p>
+                            <span id="phone-icon" class="glyphicon glyphicon-earphone"></span>&nbsp;Tel:
+                            <br><sub>011 792 1151<br>011 792 1380</sub>
+                        </p>
                     </div>
                 </div>
+                <div id="contact-content-addresses" class="row">
+                    <div id="contact-office" class="col-sm-6">
+                        <p>
+                            <span id="office-icon" class="glyphicon glyphicon-briefcase"></span>&nbsp;Office Address:
+                            <br><sub>48 Winston Ave<br>Robin Hills<br>Randburg<br>2194</sub>
+                        </p>
+                    </div>
+                    <div id="contact-postal" class="col-sm-6">
+                        <p>
+                            <span id="postal-icon" class="glyphicon glyphicon-envelope"></span>&nbsp:Postal Address:
+                            <br><sub>P.O. Box 1638<br>Cresta<br>South Africa<br>2118</sub>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="contact-banking" class="col-sm-6">
+                        <p>
+                            <span id="bank-icon" class="glyphicon glyphicon-piggy-bank"></span>&nbsp;Banking Details:
+                            <br><sub>First National Bank, Randburg<br>Branch Code: 254005<br>Account#: 50410005934</sub>
+                        </p>
+                    </div>
+                </div>
+                <div id="map"></div>
             </div>
         </div>
     </div>
@@ -260,9 +287,9 @@
     </footer>
 
     <!--<script src="menuDownGlow.js"></script>-->
-    <script src="homeFunctions.js"></script>
-    <script src="navbarDropdown.js"></script>
-    <script type="text/javascript" src="map.js"></script>
+    <script src="javascript/homeFunctions.js"></script>
+    <script src="javascript/navbarDropdown.js"></script>
+    <script type="text/javascript" src="javascript/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyBQu92UNjmjXhYd-eE0Xu-gIzws_b6LSGI"></script>
 </body>
 </html>
