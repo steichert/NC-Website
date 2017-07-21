@@ -25,7 +25,7 @@ $(document).ready(function() {
                 'height':'60px',
                 'color':'#3c3c3c',
                 'marginTop':'-15%'
-            });
+            }).attr('src','assets/logos/nc%20logo%20full-greenandgrey.png');
 
             $("nav div ul li a").css('color','#3c3c3c');
             $("nav div ul li").css('margin-top',0);
@@ -51,7 +51,7 @@ $(document).ready(function() {
                 'height':'120px',
                 'color':'#fff',
                 'marginTop':'-10%'
-            });
+            }).attr('src','assets/logos/nc%20logo%20full%20(TOP).png');
 
             $("nav div ul li a").css('color','#fff');
             $("nav div ul li").css('margin-top','2%');

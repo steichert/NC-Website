@@ -132,6 +132,8 @@ nav div ul li a {
     z-index: 1;
     border-color: #fff;
     color: #fff;
+    font-family: "NexaFontFabric", sans-serif;
+    font-size: 120%;
 }
 
 #collapse-btn:active {
@@ -234,12 +236,8 @@ nav div ul li a {
     About Us section
  */
 
-#mission-row {
-    margin-top: 6%;
-}
-
 #our-mission-title {
-    margin-top: 10%;
+    margin-top: 18%;
 }
 
 #more-about-us-btn {
@@ -545,6 +543,12 @@ nav div ul li a {
     margin-left: 1px;
 }
 
+#fb-logo:hover,
+#instagram-logo:hover,
+#twitter-logo:hover {
+    color: #3eb25b;
+}
+
 
 
 /*
@@ -582,7 +586,7 @@ nav div ul li a {
 }
 
 #ministries-footer {
-    margin-bottom: 2%;
+    /*margin-bottom: 2%;*/
 }
 
 #navbar-footer-home.navbar.navbar-inverse {
@@ -628,12 +632,46 @@ nav div ul li a {
     z-index: 2;
 }
 
+#affiliations-jumbo {
+    margin-top: -10%;
+}
+
+#affiliations-title,
+#affiliations-border,
+#affiliations-text {
+    position: absolute;
+}
+
+#affiliations-title {
+    margin-left: 39%;
+    margin-top: 25%;
+}
+
+#affiliations-border {
+    margin-left: 34%;
+    margin-top: 28%;
+}
+
+#affiliations-text {
+    margin-top: 50%;
+}
+
 #cotn-logo {
+    position: absolute;
     margin-left: 40%;
+    margin-top: 90%;
+}
+
+#affiliations-background {
+    z-index: -2;
+    width: 100%;
+    position: relative;
+    min-height: 600px;
+    opacity: 0.32;
 }
 
 #affiliations-footer {
-    margin-bottom: 5%;
+    /*margin-bottom: 5%;*/
 }
 
 
@@ -645,10 +683,11 @@ nav div ul li a {
 #contact-jumbo {
     margin-bottom: 0 !important;
     padding: 0 0;
+    background: #fff;
 }
 
 #contact-title {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 #contact-content,
