@@ -1,0 +1,197 @@
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+h1,h2,h3,h4,h5,p {
+    color: lightgray;
+    text-align: center;
+}
+
+.jumbotron {
+    color: lightgray;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+    padding-top: 0;
+}
+
+#aboutNav {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-color: rgb(34, 34, 34);
+}
+
+#collapseBtn {
+    line-height: 70px;
+    height: 70px;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: inherit;
+}
+
+.jumbotron {
+    background-color: inherit;
+}
+
+#home,
+#globe,
+#disciple {
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-size: 250%;
+}
+
+#disciple {
+    color: #3385ff;
+}
+
+#home {
+    color: #ff3333;
+}
+
+#globe {
+    color: #00b33c;
+}
+
+a:link, a:hover {
+    text-decoration: none;
+}
+
+.navbar-fixed-left {
+    margin-top: 70px;
+    width: 200px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+    float: none;
+    width: 200px;
+}
+
+#aboutUsContainer {
+    padding-top: 6%;
+}
+
+.about-row {
+    border-bottom: groove;
+    padding-bottom: 15%;
+}
+
+#missionAndVision,
+#values,
+#statement,
+#widerFamily,
+#leadership,
+#gettingConnected,
+#blog,
+#faq,
+#ourLocation {
+    margin-top: 15%;
+}
+
+ol li h4 {
+    text-align: left;
+    padding-top: 2%;
+}
+
+.collapse-text {
+    text-align: left;
+}
+
+#sidenav {
+    position:fixed;
+    margin-top: 0.5%;
+}
+
+.nav-pills li a {
+    color: #3c3c3c;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover {
+    background-color: #3eb25b;
+}
+
+.infoArea {
+    position: absolute;
+    margin-left: 18%;
+    width: 82%;
+}
+
+.collapse-button {
+    border: none;
+    background-color: inherit;
+}
+
+.panel-title {
+    text-align: left;
+}
+
+.panel {
+    background: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#widerFamily {
+    margin-bottom: 5%;
+}
+
+#admin,
+#governmentalLeaders,
+#pastoralLeaders {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.img-circle {
+    display: block;
+    margin:0 auto;
+}
+
+.row-images {
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+
+h2:before {
+    display: block;
+    content: " ";
+    margin-top: -130px;
+    height: 130px;
+    visibility: hidden;
+}
+
+.faq-well {
+    margin-top: 5%;
+}
+
+.faq-well h4 {
+    text-align: left;
+}
+
+.faq-well p {
+    text-align: left;
+    font-size: 140%;
+}
+
+#addressIcon {
+    color: #3eb25b;
+    font-size: 100%;
+    margin: 0 auto;
+}

@@ -2,6 +2,10 @@
     General styles
  */
 
+html {
+    overflow-x: hidden;
+}
+
 h1, .jumbotron h1,
 h2, .jumbotron h2,
 h3, .jumbotron h3,
