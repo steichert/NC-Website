@@ -54,55 +54,35 @@ $(document).ready(function() {
         }
     });
 
-
     $(window).on('scroll', function () {
-
         /**************************************
                     Navbar Item Select
          *************************************/
 
-
-        if($(window).scrollTop() >= 700 && $(window).scrollTop() < 2290) {
+        if($(window).scrollTop() >= 0 && $(window).scrollTop() < document.getElementById("event-row").offsetTop-20)
             $("#nav-about-us").css({'font-weight': 'bolder'});
-        }
-        else {
+        else
             $("#nav-about-us").css({'font-weight': 'normal'});
-        }
-
-        if ($(window).scrollTop() >= 2290 && $(window).scrollTop() < 2970) {
+        if ($(window).scrollTop() >= document.getElementById("event-row").offsetTop-20 && $(window).scrollTop() < document.getElementById("activities-row").offsetTop)
             $("#nav-events").css({'font-weight': 'bolder'});
-        }
-        else {
+        else
             $("#nav-events").css({'font-weight': 'normal'});
-        }
-
-        if ($(window).scrollTop() >= 2970 && $(window).scrollTop() < 3705) {
+        if ($(window).scrollTop() >= document.getElementById("activities-row").offsetTop && $(window).scrollTop() < document.getElementById("media-row").offsetTop)
             $("#nav-activities").css({'font-weight': 'bolder'});
-        }
-        else {
+        else
             $("#nav-activities").css({'font-weight': 'normal'});
-        }
-
-        if ($(window).scrollTop() >= 3705 && $(window).scrollTop() < 4580) {
+        if ($(window).scrollTop() >= document.getElementById("media-row").offsetTop && $(window).scrollTop() < document.getElementById("ministries-row").offsetTop)
             $("#nav-media").css({'font-weight': 'bolder'});
-        }
-        else {
+        else
             $("#nav-media").css({'font-weight': 'normal'});
-        }
-
-        if ($(window).scrollTop() >= 4580 && $(window).scrollTop() < 5150) {
+        if ($(window).scrollTop() >= document.getElementById("ministries-row").offsetTop && $(window).scrollTop() < document.getElementById("contact-row").offsetTop-50)
             $("#nav-ministries").css({'font-weight': 'bolder'});
-        }
-        else {
+        else
             $("#nav-ministries").css({'font-weight': 'normal'});
-        }
-
-        if ($(window).scrollTop() >= 5150) {
+        if ($(window).scrollTop() >= document.getElementById("contact-row").offsetTop-50)
             $("#nav-contact").css({'font-weight': 'bolder'});
-        }
-        else {
+        else
             $("#nav-contact").css({'font-weight': 'normal'});
-        }
     });
 
     $(".menuDown-ministries").on('click', function () {

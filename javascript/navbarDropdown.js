@@ -8,8 +8,9 @@ $(document).ready(function() {
 
     function toggleNavBar() {
         var navbar = $("#homeNav");
+        var offset = document.getElementById("mission-row").offsetTop;
 
-        if ($(window).scrollTop() >= 700) {
+        if ($(window).scrollTop() >= offset) {
             $("#welcome-banner").css('margin-top','-19px');
             $("#nav-list").show();
             $("#collapse-btn").hide();
@@ -31,7 +32,7 @@ $(document).ready(function() {
 
             if (!navbar.hasClass('navbar-fixed-top')) {
                 navbar.addClass('navbar-fixed-top');
-                navbar.css('margin-top', -700);
+                navbar.css('margin-top', -offset);
                 navbar.animate({ marginTop: 0 }, 500, function() {
                     $(window).one('scroll', toggleNavBar);
                 });
