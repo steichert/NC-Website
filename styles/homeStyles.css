@@ -200,11 +200,18 @@ nav div ul li a {
     font-size: 450%;
     font-family: "JosefineSans", sans-serif;
     color: #fff;
-    margin-top: -29%;
+    margin-top: -30%;
 }
 
 #welcome-letters-fullstop {
     color: #73fd20;
+    font-size: 130%;
+}
+
+#welcome-subtitle {
+    color: #fff;
+    font-family: "JosefineSans", sans-serif;
+    font-size: 250%;
 }
 
 #welcome-banner {
@@ -220,16 +227,55 @@ nav div ul li a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15%;
+    margin-top: 10%;
     text-align: center;
     font-size: 300%;
     color: gray;
 }
 
 #menuDown:hover {
+     /*color: #73fd20;*/
     color: lightgray;
 }
 
+
+/*
+    Service Time & Visitor section
+ */
+#service-visitor-row {
+    margin-top: 3%;
+}
+
+#service-visitor-jumbo {
+    background-color: #fff;
+    margin-top: 5%;
+    margin-bottom: 18%;
+}
+
+#service-time-col {
+    border-right: 2px groove lightgray;
+}
+
+#time-icon,
+#visitor-icon,
+#loaction-icon {
+    font-size: 250%;
+    display: block;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+#loaction-icon:hover {
+    color: #73fd20;
+}
+
+#visitor-col {
+    /*margin-top: 5%;*/
+}
+
+#visit-us-btn-holder {
+    text-align: center;
+}
 
 
 /*
@@ -237,7 +283,7 @@ nav div ul li a {
  */
 
 #our-mission-title {
-    margin-top: 18%;
+    margin-top: 8%;
 }
 
 #more-about-us-btn {
@@ -417,14 +463,32 @@ nav div ul li a {
     visibility: visible;
 }
 
-#nckidz-label {
-    color: #fff;
-    z-index: 2;
-    position: absolute;
-    margin-top: 36%;
-    margin-left: 37%;
-    visibility: hidden;
-}
+/*#nc-kidz-collect {*/
+    /*text-align: center;*/
+/*}*/
+
+/*#nckidz-label {*/
+    /*color: #fff;*/
+    /*!*z-index: 2;*!*/
+    /*!*position: absolute;*!*/
+    /*!*margin-top: 36%;*!*/
+    /*!*margin-left: 37%;*!*/
+    /*visibility: hidden;*/
+
+    /*position: absolute;*/
+    /*top: 0; right: 0;*/
+    /*bottom: 0; left: 0;*/
+    /*width: 300px;*/
+    /*height: 200px;*/
+    /*text-align: center;*/
+    /*!*background-color: rgba(0,0,0,0.8);*!*/
+    /*opacity: 0;*/
+    /*-webkit-transition: opacity 0.6s;*/
+    /*-moz-transition: opacity 0.6s;*/
+    /*transition: opacity 0.6s;*/
+    /*vertical-align:middle;*/
+    /*line-height:200px;*/
+/*}*/
 
 #blur-nckidz:hover #nckidz-label {
     visibility: visible;
@@ -447,6 +511,43 @@ nav div ul li a {
     margin-top: 8%;
     margin-left: 44%;
     margin-bottom: 10%;
+}
+
+.connect-col {
+    width:300px;
+    height:200px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.connect-image {
+    position: relative;
+    display: block;
+}
+
+.connect-text {
+    position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+    vertical-align:middle;
+    line-height:200px;
+}
+
+.connect-text h4 {
+    color: white;
+    display: inline-table;
+    vertical-align:middle;
+    line-height:100%;
 }
 
 
@@ -716,11 +817,6 @@ nav div ul li a {
     margin: 0 auto;
 }
 
-#service-time {
-    margin-top: 5%;
-    border: 1px groove #3c3c3c;
-}
-
 #nc-snapscan {
     display: block;
     float: right;
@@ -730,7 +826,7 @@ nav div ul li a {
 #map {
     margin-top: 5%;
     width: 100%;
-    height:350px;
+    height:320px;
     background-color: grey;
 }
 
