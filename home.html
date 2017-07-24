@@ -24,7 +24,7 @@
                 <ul id="nav-list" class="nav navbar-nav navbar-right">
                     <li id="nav-about-us"><a href="#our-mission-title">About Us</a></li>
                     <li id="nav-events"><a href="#event-row">Events</a></li>
-                    <li id="nav-activities"><a href="#activities-title">Activities</a></li>
+                    <li id="nav-activities"><a href="#activities-title">Get Connected</a></li>
                     <li id="nav-media"><a href="#media-title">Media</a></li>
                     <li id="nav-ministries"><a href="#ministries-title">Ministries</a></li>
                     <li id="nav-contact"><a href="#contact-title">Contact Us</a></li>
@@ -38,18 +38,45 @@
             <img id="welcome-banner" src="assets/images/light-photography-wallpaper-phone.jpg">
             <!--<div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/light-photography-wallpaper-phone.jpg" id="welcome-banner"></div>-->
             <h1 id="welcome-letters"><b>WELCOME</b> HOME<strong id="welcome-letters-fullstop">.</strong></h1>
-            <a id="menuDownLink" href="#our-mission-title"><span id="menuDown" class="glyphicon glyphicon-menu-down"></span></a>
+            <h3 id="welcome-subtitle">Join the <b style="color: #73fd20;">Family</b></h3>
+            <a id="menuDownLink" href="#service-visitor-row"><span id="menuDown" class="glyphicon glyphicon-menu-down"></span></a>
+
             <div id="sidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#service-visitor-row" onclick="closeNav()">Service Time</a>
                 <a href="#our-mission-title" onclick="closeNav()">About Us</a>
                 <a href="#event-row" onclick="closeNav()">Events</a>
-                <a href="#activities-title" onclick="closeNav()">Activities</a>
+                <a href="#activities-title" onclick="closeNav()">Get Connected</a>
                 <a href="#media-title" onclick="closeNav()">Media</a>
                 <a href="#ministries-title" onclick="closeNav()">Ministries</a>
                 <a href="#affiliations-title" onclick="closeNav()">Global Family</a>
                 <a href="#contact-title" onclick="closeNav()">Contact Us</a>
             </div>
+
         </div>
+
+        <div id="service-visitor-row" class="row">
+            <div id="service-visitor-jumbo" class="jumbotron">
+                <div id="service-time-col" class="col-sm-6">
+                    <br><span id="time-icon" class="glyphicon glyphicon-time"></span>
+                    <h2>Service Time</h2>
+                    <h3>Sundays - 9am</h3><br><br><br>
+                </div>
+                <div id="visitor-col" class="col-sm-6">
+                    <br><a id="loaction-icon" class="glyphicon glyphicon-map-marker"
+                       href="https://www.google.co.za/maps/place/New+Creation+Family+Church/@-26.1143132,27.9779713,17z/
+                        data=!3m1!4b1!4m5!3m4!1s0x1e9574da78d5c4ed:0xd66ca2e53f1688d7!8m2!3d-26.114318!4d27.98016?hl=en">
+                        <h2>Our location<br><sub>Click here</sub></h2>
+                    </a>
+                </div><br>
+                <!--<span id="visitor-icon" class="glyphicon glyphicon-user"></span>-->
+                <!--<h2>New around here?</h2><br>-->
+                <!--<div id="visit-us-btn-holder">-->
+                    <!--<a id="visit-us-btn" href="#" class="btn btn-default">Visit Us</a>-->
+                <!--</div>-->
+            </div>
+        </div>
+
         <div id="mission-row" class="row">
             <div id="mission-jumbo" class="jumbotron">
                 <h3 id="our-mission-title"><b>Our Mission</b></h3><br>
@@ -69,7 +96,7 @@
         <div class="row">
             <div id="background2" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/background2.jpg"></div>
             <div>
-                <h4 id="sermon-series-label">Hebrews Sermon Series:</h4>
+                <h4 id="sermon-series-label">Latest Sermon Series:</h4>
                 <a id="listen-btn" href="" class="btn btn-success btn-lg">
                     <span class="glyphicon glyphicon-volume-up" style="font-size: 110%"></span>
                     &nbsp;Listen</a>
@@ -77,6 +104,7 @@
             <h1 id="background2-title">Hebrews 2:18<br>Because he himself suffered when he was tempted,
                 he is able to help those who are being tempted.</h1>
         </div>
+
         <div id="event-row" class="row">
             <div id="events-jumbo" class="jumbotron">
                 <h2 id="events-title">Events</h2>
@@ -124,15 +152,20 @@
                 <p style="color: #fff">.</p>
             </div>
         </div>
+
         <div id="activities-row" class="row">
             <div id="activities-jumbo" class="jumbotron">
-                <h2 id="activities-title">Activities</h2>
+                <h2 id="activities-title">Get Connected</h2>
                 <p class="border-sm"></p><br><br>
-                <div class="col-sm-4">
-                    <a id="blur-nckidz" href="">
-                        <h4 id="nckidz-label"><b>NC KIDZ</b></h4>
-                        <img id="nckidz-image" class="img-circle" src="assets/images/activities-kidz.png" alt="nc kidz" width="300">
-                    </a>
+                <div class="col-sm-4 connect-col">
+                    <div class="connect-image">
+                        <a id="blur-nckidz" href="">
+                            <img id="nckidz-image" class="img-circle" src="assets/images/activities-kidz.png" alt="nc kidz" width="300">
+                            <div class="connect-text">
+                                <h4 id="nckidz-label"><b>NC KIDZ</b></h4>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-sm-4">
                     <a id="blur-exp" href="">
@@ -149,6 +182,7 @@
                 <a id="activities-btn" href="" class="btn btn-default"><h4>Find out more</h4></a>
             </div>
         </div>
+
         <div id="media-row" class="row">
             <h1 id="media-title">Media</h1>
             <p id="media-border-sm" class="border-sm"></p>
@@ -185,6 +219,7 @@
             </div>
             <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/media-background2.jpeg" id="media-background"></div>
         </div>
+
         <div id="ministries-row" class="row">
             <div id="ministries-jumbo" class="jumbotron">
                 <h2 id="ministries-title">Ministries</h2>
@@ -233,6 +268,7 @@
                 <p id="ministries-footer" style="color: #fff">.</p>
             </div>
         </div>
+
         <div id="affiliations-row" class="row">
             <div id="affiliations-jumbo" class="jumbotron">
                 <h2 id="affiliations-title">Global Family</h2>
@@ -256,6 +292,7 @@
             <img id="affiliations-background" src="assets/images/global-family-bg.png">
             <!--<div id="affiliations-background" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/global-family-bg.png"></div>-->
         </div>
+
         <div id="contact-row" class="row">
             <div id="contact-jumbo" class="jumbotron">
                 <h2 id="contact-title">Contact Us</h2>

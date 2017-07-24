@@ -24,8 +24,8 @@ $(document).ready(function() {
             $("#nav-logo").css({
                 'height':'60px',
                 'color':'#3c3c3c',
-                'marginTop':'-15%'
-            }).attr('src','assets/logos/nc%20logo%20full-greenandgrey.png');
+                'marginTop':'-35%'
+            }).attr('src','assets/logos/nc%20logo-gry.png');
 
             $("nav div ul li a").css('color','#3c3c3c');
             $("nav div ul li").css('margin-top',0);

@@ -15,12 +15,13 @@ $(document).ready(function() {
             var hash = this.hash;
             var scrollTop;
 
-            if (hash == "#media-title") {
+            if (hash == "#media-title")
                 scrollTop = $("#media-title").offset().top - 100;
-            }
-            else {
+
+            else if(hash == "#service-visitor-row")
+                scrollTop = $("#service-visitor-row").offset().top + 50;
+            else
                 scrollTop = $(hash).offset().top;
-            }
 
             $('html,body').animate({
                 scrollTop: scrollTop
@@ -149,7 +150,7 @@ $(document).ready(function() {
 });
 
 function openNav() {
-    document.getElementById("sidenav").style.width = "250px";
+    document.getElementById("sidenav").style.width = "300px";
 }
 
 function closeNav() {
