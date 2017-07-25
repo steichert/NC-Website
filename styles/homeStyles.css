@@ -51,6 +51,17 @@ a:link, a:hover {
     src: url("../fonts/josefin-sans/JosefinSans-Bold.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "Amatica Sc";
+    src: url("../fonts/amatic/AmaticSC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amatica Sc";
+    font-weight: bold;
+    src: url("../fonts/amatic/AmaticSC-Regular.ttf") format("truetype");
+}
+
 .container-fluid,
 .container {
     z-index: 5;
