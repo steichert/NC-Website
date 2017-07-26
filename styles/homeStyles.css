@@ -443,6 +443,8 @@ nav div ul li a {
 
 #activities-jumbo {
     margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #activities-title {
@@ -450,71 +452,15 @@ nav div ul li a {
 }
 
 #activities-jumbo .img-circle {
-    margin-left: 8%;
     position: relative;
 }
 
-#blur-exp:hover .img-circle,
-#blur-nckidz:hover .img-circle,
-#blur-lg:hover .img-circle {
+.connect-link:hover .img-circle {
     -webkit-filter: blur(6px);
     transition: 0.2s -webkit-filter linear;
 }
 
-#exp-label {
-    color: #fff;
-    z-index: 2;
-    position: absolute;
-    margin-top: 36%;
-    margin-left: 27%;
-    visibility: hidden;
-}
-
-#blur-exp:hover #exp-label {
-    visibility: visible;
-}
-
-/*#nc-kidz-collect {*/
-    /*text-align: center;*/
-/*}*/
-
-/*#nckidz-label {*/
-    /*color: #fff;*/
-    /*!*z-index: 2;*!*/
-    /*!*position: absolute;*!*/
-    /*!*margin-top: 36%;*!*/
-    /*!*margin-left: 37%;*!*/
-    /*visibility: hidden;*/
-
-    /*position: absolute;*/
-    /*top: 0; right: 0;*/
-    /*bottom: 0; left: 0;*/
-    /*width: 300px;*/
-    /*height: 200px;*/
-    /*text-align: center;*/
-    /*!*background-color: rgba(0,0,0,0.8);*!*/
-    /*opacity: 0;*/
-    /*-webkit-transition: opacity 0.6s;*/
-    /*-moz-transition: opacity 0.6s;*/
-    /*transition: opacity 0.6s;*/
-    /*vertical-align:middle;*/
-    /*line-height:200px;*/
-/*}*/
-
-#blur-nckidz:hover #nckidz-label {
-    visibility: visible;
-}
-
-#lifegroup-label {
-    color: #fff;
-    z-index: 2;
-    position: absolute;
-    margin-top: 36%;
-    margin-left: 32%;
-    visibility: hidden;
-}
-
-#blur-lg:hover #lifegroup-label {
+.connect-link:hover .connect-label {
     visibility: visible;
 }
 
@@ -525,8 +471,6 @@ nav div ul li a {
 }
 
 .connect-col {
-    width:300px;
-    height:200px;
     position: relative;
     padding: 0;
     margin: 0;
@@ -538,27 +482,27 @@ nav div ul li a {
     display: block;
 }
 
+.connect-link {
+    width: inherit;
+    height: inherit;
+}
+
 .connect-text {
     position: absolute;
     top: 0; right: 0;
     bottom: 0; left: 0;
-    width: 300px;
-    height: 200px;
+    width: inherit;
+    height: inherit;
     text-align: center;
-    background-color: rgba(0,0,0,0.8);
-    opacity: 0;
-    -webkit-transition: opacity 0.6s;
-    -moz-transition: opacity 0.6s;
-    transition: opacity 0.6s;
     vertical-align:middle;
-    line-height:200px;
+    line-height:310px;
 }
 
 .connect-text h4 {
-    color: white;
+    color: #fff;
     display: inline-table;
     vertical-align:middle;
-    line-height:100%;
+    visibility: hidden;
 }
 
 
