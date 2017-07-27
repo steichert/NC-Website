@@ -42,13 +42,13 @@ a:link, a:hover {
 
 @font-face {
     font-family: "JosefineSans";
-    src: url("../fonts/josefin-sans/JosefinSans-Regular.ttf") format('truetype');
+    src: url("../fonts/josefin-sans/JosefinSans-Thin.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "JosefineSans";
     font-weight: bold;
-    src: url("../fonts/josefin-sans/JosefinSans-Bold.ttf") format('truetype');
+    src: url("../fonts/josefin-sans/JosefinSans-Regular.ttf") format('truetype');
 }
 
 @font-face {
@@ -211,7 +211,7 @@ nav div ul li a {
     font-size: 450%;
     font-family: "JosefineSans", sans-serif;
     color: #fff;
-    margin-top: -30%;
+    margin-top: -45%;
 }
 
 #welcome-letters-fullstop {
@@ -223,6 +223,7 @@ nav div ul li a {
     color: #fff;
     font-family: "JosefineSans", sans-serif;
     font-size: 250%;
+    margin-bottom: 25%;
 }
 
 #welcome-banner {
@@ -241,7 +242,7 @@ nav div ul li a {
     margin-top: 10%;
     text-align: center;
     font-size: 300%;
-    color: gray;
+    color: #fff;
 }
 
 #menuDown:hover {
@@ -280,7 +281,7 @@ nav div ul li a {
     color: #73fd20;
 }
 
-#visitor-col {
+#loaction-col {
     /*margin-top: 5%;*/
 }
 
@@ -304,7 +305,8 @@ nav div ul li a {
 }
 
 #more-about-us-btn:hover,
-#activities-btn:hover {
+#activities-btn:hover,
+#see-all-event-btn:hover {
     background-color: #4cae4c;
     color: #fff;
     border-color: #67b168;
@@ -347,7 +349,7 @@ nav div ul li a {
 #background2-title {
     z-index: -1;
     text-align: center;
-    font-size: 480%;
+    font-size: 500%;
     font-family: 'Amatica Sc', 'sans-serif';
     color: #3c3c3c;
     margin-top: -600px;
@@ -359,7 +361,7 @@ nav div ul li a {
 #sermon-series-label {
     z-index: -1;
     font-family: 'Amatica Sc', 'sans-serif';
-    font-size: 250%;
+    font-size: 300%;
     position: absolute;
     margin-top: -180px;
     margin-left: 35%;
@@ -411,6 +413,10 @@ nav div ul li a {
     margin-bottom: 5%;
 }
 
+#events-jumbo {
+    text-align: center;
+}
+
 #events-title {
     margin-top: 5%;
 }
@@ -420,16 +426,58 @@ nav div ul li a {
     margin-left: 10%;
     border: 1px solid lightgray;
     margin-bottom: 15%;
+    text-align: center;
 }
 
 .card-img-top {
     width: 100%;
 }
 
+.card-block h4 {
+    font-weight: bold;
+}
+
 .card-block a {
-    margin-left: 25%;
     margin-bottom: 5%;
 }
+
+
+
+/*
+    Visitor section
+ */
+
+#visitor-row .parallax-window {
+    min-height: 550px;
+}
+
+.visitor-content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.visitor-content a {
+    background: transparent;
+    color: #fff;
+}
+
+.visitor-content a:hover {
+    background-color: #4cae4c;
+    border-color: #67b168;
+    color: #fff;
+}
+
+#visitor-banner {
+    z-index: -1;
+    position: relative;
+    width: 100%;
+}
+
 
 
 
@@ -448,7 +496,7 @@ nav div ul li a {
 }
 
 #activities-title {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 #activities-jumbo .img-circle {
@@ -458,10 +506,12 @@ nav div ul li a {
 .connect-link:hover .img-circle {
     -webkit-filter: blur(6px);
     transition: 0.2s -webkit-filter linear;
+
 }
 
 .connect-link:hover .connect-label {
-    visibility: visible;
+    opacity: 1;
+    transition: 0.25s opacity linear;
 }
 
 #activities-btn {
@@ -502,7 +552,7 @@ nav div ul li a {
     color: #fff;
     display: inline-table;
     vertical-align:middle;
-    visibility: hidden;
+    opacity: 0;
 }
 
 
@@ -778,9 +828,14 @@ nav div ul li a {
     margin-right: 10%;
 }
 
-#map {
+#map-container {
+    text-align: center;
     margin-top: 5%;
-    width: 100%;
+}
+
+#map {
+    margin: 0 auto;
+    width: 90%;
     height:320px;
     background-color: grey;
 }

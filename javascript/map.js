@@ -6,7 +6,7 @@ function myMap() {
 
     var mapOptions = {
         center: new google.maps.LatLng(-26.114039, 27.980182),
-        zoom: 14,
+        zoom: 13,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
@@ -18,7 +18,9 @@ function myMap() {
     });
 
     var infowindow = new google.maps.InfoWindow({
-        content:"New Creation Family Church"
+        content:"<b>New Creation Family Church</b><br>4 Gemsbok Rd<br>Robin Hills<br>" +
+        "<a href='https://www.google.co.za/maps/place/New+Creation+Family+Church/@-26.1143132,27.9779713,17z/data=!3m1!4b1!4m5!3m4!1s0x1e9574da78d5c4ed:0xd66ca2e53f1688d7!8m2!3d-26.114318!4d27.98016?hl=en' target='_blank'>" +
+        "Google Maps</a>"
     });
 
     infowindow.open(map,marker);

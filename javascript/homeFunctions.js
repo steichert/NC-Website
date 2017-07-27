@@ -17,9 +17,10 @@ $(document).ready(function() {
 
             if (hash == "#media-title")
                 scrollTop = $("#media-title").offset().top - 100;
-
             else if(hash == "#service-visitor-row")
                 scrollTop = $("#service-visitor-row").offset().top + 50;
+            else if (hash == "#our-mission-title")
+                scrollTop = $("#mission-row").offset().top + 10;
             else
                 scrollTop = $(hash).offset().top;
 
