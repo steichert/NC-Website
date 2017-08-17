@@ -34,11 +34,18 @@
 
     <div class="container-fluid">
         <div class="row">
-            <img id="welcome-banner" src="assets/images/welcome-banner2.jpeg">
-            <h1 id="welcome-letters"><b>WELCOME</b> HOME<strong id="welcome-letters-fullstop">.</strong></h1>
-            <h3 id="welcome-subtitle">Join the <b style="color: #73fd20;">Family</b></h3>
-            <a id="menuDownLink" href="#service-visitor-row"><span id="menuDown" class="glyphicon glyphicon-menu-down"></span></a>
-
+            <div class="banner-container">
+                <div class="banner-image">
+                    <img id="welcome-banner" src="assets/images/welcome-banner2.jpeg">
+                    <div class="banner-title">
+                        <h1 id="welcome-letters"><b>WELCOME</b> HOME<strong id="welcome-letters-fullstop">.</strong></h1>
+                        <h3 id="welcome-subtitle">Join the <b style="color: #73fd20;">Family</b></h3>
+                    </div>
+                    <div class="banner-arrow">
+                        <a id="menuDownLink" href="#service-visitor-row"><span id="menuDown" class="glyphicon glyphicon-menu-down"></span></a>
+                    </div>
+                </div>
+            </div>
             <div id="sidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#service-visitor-row" onclick="closeNav()">Service Time</a>
@@ -51,7 +58,6 @@
                 <a href="#affiliations-title" onclick="closeNav()">Global Family</a>
                 <a href="#contact-title" onclick="closeNav()">Contact Us</a>
             </div>
-
         </div>
 
         <div id="service-visitor-row" class="row">
@@ -79,7 +85,10 @@
                 <p id="mission-border" class="border"></p><br>
                 <h2 id="our-vision-title"><b>Our Vision</b></h2><br>
                 <p id="our-vision-parag">To become His community,<br>to impact our community.</p><br><br><br><br>
-                <a id="more-about-us-btn" href="about-us.html" class="btn btn-default"><h4>More about us</h4></a>
+
+                <div class="about-us-btn-container">
+                    <a id="more-about-us-btn" href="about-us.html" class="btn btn-default"><h4>More about us</h4></a>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -89,11 +98,12 @@
         </div>
         <div class="row">
             <div id="background2" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/background2.jpg"></div>
-            <div>
-                <h4 id="sermon-series-label">Latest Sermon Series:</h4>
-                <a id="listen-btn" href="" class="btn btn-success btn-lg">
-                    <span class="glyphicon glyphicon-volume-up" style="font-size: 110%"></span>
-                    &nbsp;Listen</a>
+            <div class="seasonal-label-btn">
+                <h4 id="sermon-series-label">Latest Sermon Series:
+                    &nbsp;&nbsp;<a id="listen-btn" href="" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-volume-up" style="font-size: 110%"></span>&nbsp;Listen
+                    </a>
+                </h4>
             </div>
             <h1 id="background2-title">Hebrews 2:18<br>Because he himself suffered when he was tempted,
                 he is able to help those who are being tempted.</h1>
@@ -108,7 +118,7 @@
                         <div class="card">
                             <img class="card-img-top" src="assets/images/HC card.png">
                             <div class="card-block">
-                                <h4 class="card-title">Holiday Club</h4>
+                                <!--<h4 class="card-title">Holiday Club</h4>-->
                                 <p class="card-text" style="font-size: 120%">Holiday Club is BIG kids event. for the year,where the kids come and learn in a fun environment</p>
                                 <a href="#" class="btn btn-default">Read more</a>
                             </div>
@@ -118,7 +128,7 @@
                         <div class="card">
                             <img class="card-img-top" src="assets/images/Baby ded-card.png">
                             <div class="card-block">
-                                <h4 class="card-title">Church w/Baby Dedications</h4>
+                                <!--<h4 class="card-title">Church w/Baby Dedications</h4>-->
                                 <p class="card-text" style="font-size: 120%">Do you have a child to dedicate? during our service we take time to pray over the children and commit them to the Lord.</p>
                                 <a href="#" class="btn btn-default">Read more</a>
                             </div>
@@ -128,7 +138,7 @@
                         <div class="card">
                             <img class="card-img-top" src="assets/images/Connect-card.png">
                             <div class="card-block">
-                                <h4 class="card-title">Connect Sunday</h4>
+                                <!--<h4 class="card-title">Connect Sunday</h4>-->
                                 <p class="card-text" style="font-size: 120%">If you've been visiting with us for a while and want to know more about NC, join us at at the connect table after the service to meet pastors and leaders.</p>
                                 <a href="#" class="btn btn-default">Read more</a>
                             </div>
@@ -140,7 +150,7 @@
                         <div class="card">
                             <img class="card-img-top" src="assets/images/WE-Card.png">
                             <div class="card-block">
-                                <h4 class="card-title">Womens Conference</h4>
+                                <!--<h4 class="card-title">Womens Conference</h4>-->
                                 <p class="card-text" style="font-size: 120%">Womens Conference, 12 August 2017, is a day for all the women to gather and grow together .</p>
                                 <a href="#" class="btn btn-default">Read more</a>
                             </div>
@@ -273,89 +283,137 @@
                     </div>
                     <div class="col-sm-3"></div>
                 </div>
-                <a id="activities-btn" href="" class="btn btn-default"><h4>Find out more</h4></a>
+                <div class="activities-btn-container">
+                    <a id="activities-btn" href="" class="btn btn-default"><h4>Find out more</h4></a>
+                </div>
             </div>
         </div>
 
         <div id="media-row" class="row">
-            <h2 id="media-title"><b>Media</b></h2>
-            <!--<p id="media-border-sm" class="border-sm"></p>-->
-            <div id="cam-mic-cont" class="container">
-                <div class="row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-3">
-                        <a id="sermon-link" href="#">
-                            <h4 id="mic-title"><b>SERMONS</b></h4>
-                            <img id="mic-photo" class="img-circle" src="assets/images/mic.jpeg" alt="sermons" width="220">
-                        </a>
+            <div class="col-md-12">
+                <h2 id="media-title"><b>Media</b><p class="border-sm" id="media-border-sm"></p><br><br></h2>
+
+                <div class="row" id="sermon-row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="media-image">
+                            <a class="media-link" id="sermon-link" href="#">
+                                <img id="mic-photo" class="img-circle" src="assets/images/mic.jpeg" alt="sermons" width="220">
+                                <div class="media-text">
+                                    <h4 id="mic-title" class="media-label"><b>SERMONS</b></h4>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-sm-3">
-                        <a id="photo-link" href="#">
-                            <h4 id="camera-title"><b>PHOTOS</b></h4>
-                            <img id="camera-photo" class="img-circle" src="assets/images/camera.jpeg" alt="photos" width="220">
-                        </a>
+                    <div class="col-md-8">
+                        <h4>Catch up on the latest recorded sermons</h4>
+                        <div class="btn-container">
+                            <button href="#" class="btn btn-default">Sermons</button>
+                        </div>
                     </div>
-                    <div class="col-sm-3"></div>
+                </div>
+
+                <div class="row" id="photo-row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="media-image">
+                            <a class="media-link" id="photo-link" href="#">
+                                <img id="camera-photo" class="img-circle" src="assets/images/camera.jpeg" alt="photos" width="220">
+                                <div class="media-text">
+                                    <h4 id="camera-title" class="media-label"><b>PHOTOS</b></h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h4>View regularly posts of photos and videos from our Instagram page</h4>
+                        <div class="btn-container">
+                            <button href="#" class="btn btn-default">Photos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="social-media" class="row">
-                <p>
-                    <a class="social-media-logo" href="https://www.facebook.com/NewCreationJHB/" target="_blank">
-                        <img id="fb-logo" src="assets/logos/fb-logo.png" width="45">
-                    </a>
-                    <a class="social-media-logo" id="instagram-logo" href="https://www.instagram.com/newcreation_jhb/" target="_blank">
-                        <img src="assets/logos/instagram-logo.png" width="60">
-                    </a>
-                    <a id="twitter-logo" class="social-media-logo" href="https://twitter.com/newcreation_jhb" target="_blank">
-                        <img src="assets/logos/twitter-logo.png" width="51">
-                    </a>
-                </p>
-            </div>
-            <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/media-background2.jpeg" id="media-background"></div>
+
+
+            <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/media-background3.jpeg" id="media-background"></div>
         </div>
 
         <div id="ministries-row" class="row">
             <div id="ministries-jumbo" class="jumbotron">
                 <h2 id="ministries-title">Ministries</h2>
                 <p class="border-sm"></p><br><br>
-                <div class="col-sm-4">
-                    <div class="dropdown card ministry-card">
-                        <img id="kings-logo" src="assets/logos/ksrh-logo.png" alt="kings school" width="290"><br>
-                        <span class="menuDown-ministries glyphicon glyphicon-menu-down dropdown-toggle" data-toggle="dropdown"></span>
-                        <div class="dropdown-menu card-block ministry-card-block">
-                            <h4 class="card-title">Ministry Title</h4>
-                            <p class="card-text" style="font-size: 110%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque, dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</p>
-                            <a href="#" class="btn btn-default">
-                                <span class="glyphicon glyphicon-globe"></span>&nbsp;Website
-                            </a>
+
+                <div class="col-md-4">
+                    <div class="panel-group" id="tksrh-accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#tksrh-accordian" href="#collapse-tksrh">
+                                        <img id="kings-logo" src="assets/logos/ksrh-logo.png" alt="kings school" width="290">
+                                        <br><br><b><span class="caret"></span></b>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-tksrh" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h3>Ministry Title</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque,
+                                        dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</h4>
+                                </div>
+                                <div class="panel-footer" href="#">
+                                    <button class="btn btn-default">Find out more</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="dropdown card ministry-card">
-                        <img id="oasis-logo" src="assets/logos/oasis-logo.png" alt="oasis haven" width="200"><br>
-                        <span class="menuDown-ministries glyphicon glyphicon-menu-down dropdown-toggle" data-toggle="dropdown"></span>
-                        <div class="dropdown-menu card-block ministry-card-block">
-                            <h4 class="card-title">Ministry Title</h4>
-                            <p class="card-text" style="font-size: 110%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque, dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</p>
-                            <a href="#" class="btn btn-default">
-                                <span class="glyphicon glyphicon-globe"></span>
-                                &nbsp;Website
-                            </a>
+
+                <div class="col-md-4">
+                    <div class="panel-group" id="oasis-accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#tksrh-accordian" href="#collapse-oasis">
+                                        <img id="oasis-logo" src="assets/logos/oasis-logo.png" alt="oasis haven" width="200">
+                                        <br><br><b><span class="caret"></span></b>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-oasis" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h3>Ministry Title</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque,
+                                        dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</h4>
+                                </div>
+                                <div class="panel-footer" href="#">
+                                    <button class="btn btn-default">Find out more</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="dropdown card ministry-card">
-                        <img id="paradigm-logo" src="assets/logos/paradigmshift-logo.jpg" alt="paradigm" width="150"><br>
-                        <span class="menuDown-ministries glyphicon glyphicon-menu-down dropdown-toggle" data-toggle="dropdown"></span>
-                        <div class="dropdown-menu card-block ministry-card-block">
-                            <h4 class="card-title">Ministry Title</h4>
-                            <p class="card-text" style="font-size: 110%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque, dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</p>
-                            <a href="#" class="btn btn-default">
-                                <span class="glyphicon glyphicon-globe"></span>
-                                &nbsp;Website
-                            </a>
+
+                <div class="col-md-4">
+                    <div class="panel-group" id="paradigm-accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#paradigm-accordian" href="#collapse-paradigm">
+                                        <img id="paradigm-logo" src="assets/logos/paradigmshift-logo.jpg" alt="paradigm" width="150">
+                                        <br><br><b><span class="caret"></span></b>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-paradigm" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h3>Ministry Title</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque,
+                                        dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</h4>
+                                </div>
+                                <div class="panel-footer" href="#">
+                                    <button class="btn btn-default">Find out more</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -390,52 +448,125 @@
         <div id="contact-row" class="row">
             <div id="contact-jumbo" class="jumbotron">
                 <h2 id="contact-title">Contact Us</h2>
-                <p class="border-sm"></p><br><br>
-                <div id="contact-content" class="row">
-                    <div id="contact-address" class="col-sm-4">
-                        <p>
-                            <span id="addressIcon" class="glyphicon glyphicon-home small"></span>&nbsp;Campus Address:
-                            <br><sub>4 Gemsbok Rd<br>Robin Hills<br>Randburg<br>2194</sub>
-                        </p>
-                    </div>
-                    <div id="contact-office" class="col-sm-4">
-                        <p>
-                            <span id="office-icon" class="glyphicon glyphicon-briefcase"></span>&nbsp;Office Address:
-                            <br><sub>48 Winston Ave<br>Robin Hills<br>Randburg<br>2194</sub>
-                        </p>
-                    </div>
-                    <div id="contact-postal" class="col-sm-4">
-                        <p>
-                            <span id="postal-icon" class="glyphicon glyphicon-envelope"></span>&nbsp:Postal Address:
-                            <br><sub>P.O. Box 1638<br>Cresta<br>South Africa<br>2118</sub>
-                        </p>
+                <p class="border-sm"></p><br><br><br><br>
+
+                <div class="col-md-4">
+                    <div class="panel-group" id="address-accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#address-accordian" href="#collapse-campus">
+                                        <span id="addressIcon" class="glyphicon glyphicon-home small"></span>&nbsp;&nbsp;Campus Address
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-campus" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h4>4 Gemsbok Rd<br>Robin Hills<br>Randburg<br>2194</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#address-accordian" href="#collapse-office">
+                                        <span id="office-icon" class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;Office Address
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-office" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4>48 Winston Ave<br>Robin Hills<br>Randburg<br>2194</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#address-accordian" href="#collapse-postal">
+                                        <span id="postal-icon" class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Postal Address
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-postal" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4>P.O. Box 1638<br>Cresta<br>South Africa<br>2118</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="contact-content-addresses" class="row">
-                    <div id="contact-phone" class="col-sm-4">
-                        <p>
-                            <span id="phone-icon" class="glyphicon glyphicon-earphone"></span>&nbsp;Tel:
-                            <br><sub>011 792 1151<br>011 792 1380</sub>
-                        </p>
-                    </div>
-                    <div id="contact-email" class="col-sm-4">
-                        <p>
-                            <span id="email-icon" class="glyphicon glyphicon-send"></span>&nbsp;Email:
-                            <br><sub>admin@newcreation.co.za</sub>
-                        </p>
-                    </div>
-                    <div id="contact-banking" class="col-sm-4">
-                        <p>
-                            <span id="bank-icon" class="glyphicon glyphicon-piggy-bank"></span>&nbsp;Banking Details:
-                            <br><sub>First National Bank, Randburg<br>Branch Code: 254005<br>Account#: 50410005934</sub>
-                        </p>
+
+                <div class="col-md-4">
+                    <div class="panel-group" id="contact-details-accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#contact-details-accordian" href="#collapse-phone">
+                                        <span id="phone-icon" class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;Phone
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-phone" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h4>011 792 1151<br>011 792 1380</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#contact-details-accordian" href="#collapse-email">
+                                        <span id="email-icon" class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Email
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-email" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4>admin@newcreation.co.za</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img id="nc-snapscan" src="assets/images/nc-snapscan.png" width="220">
+
+                <div class="col-md-4">
+                    <div class="panel-group" id="banking-accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#banking-accordian" href="#collapse-banking">
+                                        <span id="bank-icon" class="glyphicon glyphicon-piggy-bank"></span>&nbsp;&nbsp;Banking Details
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-banking" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h4>First National Bank, Randburg<br>Branch Code: 254005<br>Account#: 50410005934</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#banking-accordian" href="#collapse-snapscan">
+                                        <span id="snapscan-icon" class="glyphicon glyphicon-qrcode"></span>&nbsp;&nbsp;Snapscan
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-snapscan" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <img id="nc-snapscan" src="assets/images/nc-snapscan.png" width="220">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div id="map-container">
                     <div id="map"></div>
                 </div>

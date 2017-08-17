@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     function toggleNavBar() {
         var navbar = $("#homeNav");
-        var offset = document.getElementById("mission-row").offsetTop;
+        var offset = document.getElementById("service-visitor-row").offsetTop;
 
         if ($(window).scrollTop() >= offset) {
             $("#welcome-banner").css('margin-top','-19px');

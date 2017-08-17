@@ -9,7 +9,7 @@ $(document).ready(function() {
         'height':'0'
     }).hide();
 
-    $("a").on('click', function (event) {
+    $("#navItems a, #sidenav a, #menuDownLink, #arrow-up-btn").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
@@ -99,58 +99,54 @@ $(document).ready(function() {
         }
     });
 
-    $("#photo-link")
-        .on('mouseenter', function() {
-            $("#camera-title").animate({
-                marginLeft: '45%',
-                width: '80px'
-            }, 500).css({'visibility': 'visible'});
-        }).on('mouseleave', function() {
-        $("#camera-title").animate({
-            width: '0',
-            marginLeft: '90%'
-        }, 300);
-        setTimeout(function () {
-            $("#camera-title").css({'visibility': 'hidden'});
-        },300);
-    });
-
-    $("#camera-title").on('mouseenter',function(){
-        $("#camera-photo").css('-webkit-filter','blur(6px)');
-    }).on('mouseleave',function() {
-        $("#camera-photo").css('-webkit-filter','');
-    });
-
-    $("#sermon-link")
-        .on('mouseenter', function() {
-            $("#mic-title").animate({
-                width: '100px',
-                marginLeft: '10%'
-            }, 500).css({'visibility': 'visible'});
-        }).on('mouseleave', function() {
-        $("#mic-title").animate({
-            width: '0',
-            marginLeft: '65%'
-        }, 300);
-        setTimeout(function () {
-            $("#mic-title").css({'visibility': 'hidden'});
-        },300);
-    });
-
-    $("#mic-title").on('mouseenter',function(){
-        $("#mic-photo").css('-webkit-filter','blur(6px)');
-    }).on('mouseleave',function() {
-        $("#mic-photo").css('-webkit-filter','');
-    });
+    // $("#photo-link")
+    //     .on('mouseenter', function() {
+    //         $("#camera-title").animate({
+    //             marginLeft: '45%',
+    //             width: '80px'
+    //         }, 500).css({'visibility': 'visible'});
+    //     }).on('mouseleave', function() {
+    //     $("#camera-title").animate({
+    //         width: '0',
+    //         marginLeft: '90%'
+    //     }, 300);
+    //     setTimeout(function () {
+    //         $("#camera-title").css({'visibility': 'hidden'});
+    //     },300);
+    // });
+    //
+    // $("#camera-title").on('mouseenter',function(){
+    //     $("#camera-photo").css('-webkit-filter','blur(6px)');
+    // }).on('mouseleave',function() {
+    //     $("#camera-photo").css('-webkit-filter','');
+    // });
+    //
+    // $("#sermon-link")
+    //     .on('mouseenter', function() {
+    //         $("#mic-title").animate({
+    //             width: '100px',
+    //             marginLeft: '10%'
+    //         }, 500).css({'visibility': 'visible'});
+    //     }).on('mouseleave', function() {
+    //     $("#mic-title").animate({
+    //         width: '0',
+    //         marginLeft: '65%'
+    //     }, 300);
+    //     setTimeout(function () {
+    //         $("#mic-title").css({'visibility': 'hidden'});
+    //     },300);
+    // });
+    //
+    // $("#mic-title").on('mouseenter',function(){
+    //     $("#mic-photo").css('-webkit-filter','blur(6px)');
+    // }).on('mouseleave',function() {
+    //     $("#mic-photo").css('-webkit-filter','');
+    // });
 
     $('.dropdown').on('show.bs.dropdown', function() {
         $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
     }).on('hide.bs.dropdown', function() {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-    });
-
-    $(".img-circle").hover(function(){
-
     });
 });
 
