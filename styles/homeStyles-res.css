@@ -1,0 +1,100 @@
+@media screen and (max-width: 767px) {
+    #welcome-banner {
+        margin-top: -131px !important;
+    }
+
+    #collapse-btn {
+        margin-top: -5%;
+    }
+
+    #welcome-letters {
+        font-size: 350%;
+
+    }
+
+    #welcome-subtitle {
+        font-size: 200%;
+    }
+
+    .banner-title {
+        margin-top: 1%;
+    }
+
+    .banner-arrow {
+        margin-top: 30%;
+    }
+
+    #background2 {
+        margin-top: -6%;
+    }
+
+    #background2-title {
+        font-size: 400%;
+    }
+
+    #sermon-series-label {
+        font-size: 300%;
+    }
+}
+
+@media screen and (max-width: 1105px) {
+    #sermon-row {
+        margin-top: 20%;
+    }
+
+    #photo-row {
+        margin-top: 45%;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    #photo-row {
+        margin-top: 50%;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    #photo-row {
+        margin-top: 55%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #sermon-row {
+        margin-top: 25%;
+    }
+
+    #photo-row {
+        margin-top: 65%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #sermon-row {
+        margin-top: 28%;
+    }
+
+    #photo-row {
+        margin-top: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #sermon-row {
+        margin-top: 30%;
+    }
+
+    #photo-row {
+        margin-top: 90%;
+    }
+
+    #camera-photo,
+    #mic-photo {
+        height: 150px;
+        width: 150px;
+        margin-left: 15%;
+    }
+}
+
+
+

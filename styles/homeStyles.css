@@ -28,7 +28,7 @@ a:link, a:hover {
 }
 
 .btn {
-    border-radius: 1% !important;
+    border-radius: 3% !important;
 }
 
 @font-face {
@@ -352,8 +352,9 @@ nav div ul li a {
 #arrow-up-btn {
     z-index: 3;
     position: fixed;
-    top: 93%;
-    margin-left: 95%;
+    bottom: 3%;
+    /*margin-left: 95%;*/
+    right: 4%;
     background-color: #d0d0d0;
     visibility: hidden;
 }
@@ -568,6 +569,7 @@ nav div ul li a {
 .connect-image {
     position: relative;
     display: block;
+    text-align: center;
 }
 
 .connect-link {
@@ -582,8 +584,6 @@ nav div ul li a {
     position: absolute;
     top: 0; right: 0;
     bottom: 0; left: 0;
-    width: 300px;
-    height: 300px;
     text-align: center;
     vertical-align:middle;
     line-height:310px;
@@ -646,11 +646,11 @@ nav div ul li a {
 }
 
 #photo-row{
-    margin-top: 38%;
+    margin-top: 36%;
 }
 
-#photo-row h4,
-#sermon-row h4 {
+.media-desc h4,
+.media-desc h4 {
     margin-top: 8%;
 }
 
@@ -658,8 +658,8 @@ nav div ul li a {
     margin-top: 4%;
 }
 
-#photo-row h4,
-#sermon-row h4,
+.media-desc h4,
+.media-desc h4,
 #media-row .btn-container {
     text-align: left;
     margin-left: 6%;
@@ -691,8 +691,7 @@ nav div ul li a {
 .media-image {
     position: relative;
     display: block;
-    width: 220px;
-    height: 220px;
+    text-align: center;
 }
 
 .media-link {
@@ -704,12 +703,11 @@ nav div ul li a {
 .media-text {
     z-index: 3;
     position: absolute;
-    top: 38%; right: 0;
+    top: 0; right: 0;
     bottom: 0; left: 0;
-    width: 220px;
-    height: 220px;
     text-align: center;
     vertical-align:middle;
+    line-height: 200px;
 }
 
 .media-text h4 {
@@ -746,7 +744,7 @@ nav div ul li a {
 }
 
 #ministries-row div.panel-heading {
-    background: #f9f9f9;
+    background: #fafafa;
     border-radius: 0 !important;
 }
 
@@ -755,8 +753,10 @@ nav div ul li a {
     background: transparent;
 }
 
-#ministries-row span.caret {
-    font-size: 100px !important;
+.caret {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #000000;
 }
 
 #ministries-footer {
