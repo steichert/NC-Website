@@ -18,6 +18,10 @@ h1, h2, h3, h4, p {
     text-align: center;
 }
 
+hr {
+    width: 80%;
+}
+
 a:link, a:hover {
     text-decoration: none !important;
 }
@@ -291,7 +295,8 @@ nav div ul li a {
     margin-bottom: 18%;
 }
 
-#service-time-col {
+#service-time-col,
+#our-mission-col {
     border-right: 2px groove lightgray;
 }
 
@@ -305,7 +310,7 @@ nav div ul li a {
 }
 
 #loaction-icon:hover {
-    color: #4cae4c;
+    color: #73fd20;
 }
 
 #loaction-col {
@@ -322,18 +327,17 @@ nav div ul li a {
  */
 
 #our-mission-title {
-    margin-top: 8%;
-}
-
-#more-about-us-btn {
-    position: relative;
-    /*margin-left: 44%;*/
-    margin-bottom: 10%;
+    /*margin-top: 8%;*/
 }
 
 .about-us-btn-container {
     text-align: center;
     width: 100%;
+}
+
+#more-about-us-btn {
+    position: relative;
+    margin-bottom: 5%;
 }
 
 #more-about-us-btn:hover,
@@ -503,9 +507,14 @@ nav div ul li a {
 }
 
 .visitor-content a:hover {
-    background-color: #4cae4c;
-    border-color: #67b168;
-    color: #fff;
+    background-color: #fff;
+    border-color: #f1f1f1;
+    color: #3c3c3c;
+    opacity: 0.9;
+}
+
+.visitor-content a {
+    width: 70%;
 }
 
 #visitor-banner {
@@ -673,9 +682,10 @@ nav div ul li a {
 }
 
 #media-row button:hover {
-    background-color: #4cae4c;
-    border-color: #67b168;
-    color: #fff;
+    background-color: #fff;
+    border-color: #f1f1f1;
+    color: #3c3c3c;
+    opacity: 0.9;
 }
 
 .media-link:hover .img-circle {
@@ -894,6 +904,10 @@ nav div ul li a {
 #contact-row .panel-title {
     text-align: left;
     font-size: 150% !important;
+}
+
+#contact-row .panel-collapse {
+    /*min-height: 200px;*/
 }
 
 #addressIcon,

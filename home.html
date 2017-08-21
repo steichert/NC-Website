@@ -52,41 +52,51 @@
                 <a href="#service-visitor-row" onclick="closeNav()">Service Time</a>
                 <a href="#our-mission-title" onclick="closeNav()">About Us</a>
                 <a href="#event-row" onclick="closeNav()">Events</a>
+                <hr>
                 <a href="#visitor-row" onclick="closeNav()">Vistors</a>
                 <a href="#activities-title" onclick="closeNav()">Get Connected</a>
+                <hr>
                 <a href="#media-title" onclick="closeNav()">Media</a>
+                <hr>
                 <a href="#ministries-title" onclick="closeNav()">Ministries</a>
                 <a href="#affiliations-title" onclick="closeNav()">Global Family</a>
+                <hr>
                 <a href="#contact-title" onclick="closeNav()">Contact Us</a>
             </div>
         </div>
 
         <div id="service-visitor-row" class="row">
             <div id="service-visitor-jumbo" class="jumbotron">
-                <div id="service-time-col" class="col-sm-6">
+                <div id="service-time-col" class="col-lg-6">
                     <br><span id="time-icon" class="glyphicon glyphicon-time"></span>
                     <h2>Service Time</h2>
                     <h3>Sundays - 9am</h3><br><br><br>
                 </div>
-                <div id="location-col" class="col-sm-6">
-                    <br><a id="loaction-icon" class="glyphicon glyphicon-map-marker"
+                <div id="location-col" class="col-lg-6">
+                    <br>
+                    <a id="loaction-icon" class="glyphicon glyphicon-map-marker"
                        href="https://www.google.co.za/maps/place/New+Creation+Family+Church/@-26.1143132,27.9779713,17z/
                         data=!3m1!4b1!4m5!3m4!1s0x1e9574da78d5c4ed:0xd66ca2e53f1688d7!8m2!3d-26.114318!4d27.98016?hl=en">
-                        <h2>Our location<br><sub>Click here</sub></h2>
+                        <h2>Our location</h2>
+                        <h3>Click here</h3>
                     </a>
-                </div><br>
+                </div>
             </div>
         </div>
 
         <div id="mission-row" class="row">
             <div id="mission-jumbo" class="jumbotron">
-                <h2 id="our-mission-title"><b>Our Mission</b></h2><br>
-                <p id="our-mission-parag">Loving God,<br>
-                    Loving Others,<br> Advancing His Kingdom.</p>
-                <p id="mission-border" class="border"></p><br>
-                <h2 id="our-vision-title"><b>Our Vision</b></h2><br>
-                <p id="our-vision-parag">To become His community,<br>to impact our community.</p><br><br><br><br>
 
+                <div id="our-mission-col" class="col-lg-6">
+                    <h2 id="our-mission-title"><b>Our Mission</b></h2><br>
+                    <p id="our-mission-parag">Loving God,<br>
+                    Loving Others,<br> Advancing His Kingdom.</p>
+                </div>
+                <div id="our-vision-col" class="col-lg-6">
+                    <h2 id="our-vision-title"><b>Our Vision</b></h2><br>
+                    <p id="our-vision-parag">To become His community,<br>to impact our community.</p><br>
+                </div>
+                <p style="color: #fff">.</p>
                 <div class="about-us-btn-container">
                     <a id="more-about-us-btn" href="about-us.html" class="btn btn-default"><h4>More about us</h4></a>
                 </div>
@@ -163,9 +173,15 @@
 
         <div id="visitor-row" class="row">
             <div class="visitor-content">
-                <h2>New Around Here?</h2><br>
-                <a href="" class="btn btn-default"><h4>Plan a visit</h4></a><br><br>
-                <a href="" class="btn btn-default"><h4>What to expect</h4></a>
+                <h2>New Around Here?</h2><br><br>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3">
+                    <a href="" class="btn btn-default"><h4>Plan a visit</h4></a><br><br>
+                </div>
+                <div class="col-lg-3">
+                    <a href="" class="btn btn-default"><h4>What to expect</h4></a>
+                </div>
+                <div class="col-lg-3"></div>
             </div>
             <div id="visitor-banner" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/visitor-background.jpg"></div>
         </div>
@@ -448,6 +464,7 @@
                                 <h2 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#address-accordian" href="#collapse-campus">
                                         <span id="addressIcon" class="glyphicon glyphicon-home small"></span>&nbsp;&nbsp;Campus Address
+                                        &nbsp;<span class="caret"></span>
                                     </a>
                                 </h2>
                             </div>
@@ -463,6 +480,7 @@
                                 <h2 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#address-accordian" href="#collapse-office">
                                         <span id="office-icon" class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;Office Address
+                                        &nbsp;<span class="caret"></span>
                                     </a>
                                 </h2>
                             </div>
@@ -473,20 +491,20 @@
                             </div>
                         </div>
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#address-accordian" href="#collapse-postal">
-                                        <span id="postal-icon" class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Postal Address
-                                    </a>
-                                </h2>
-                            </div>
-                            <div id="collapse-postal" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <h4>P.O. Box 1638<br>Cresta<br>South Africa<br>2118</h4>
-                                </div>
-                            </div>
-                        </div>
+                        <!--<div class="panel panel-default">-->
+                            <!--<div class="panel-heading">-->
+                                <!--<h2 class="panel-title">-->
+                                    <!--<a data-toggle="collapse" data-parent="#address-accordian" href="#collapse-postal">-->
+                                        <!--<span id="postal-icon" class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Postal Address-->
+                                    <!--</a>-->
+                                <!--</h2>-->
+                            <!--</div>-->
+                            <!--<div id="collapse-postal" class="panel-collapse collapse">-->
+                                <!--<div class="panel-body">-->
+                                    <!--<h4>P.O. Box 1638<br>Cresta<br>South Africa<br>2118</h4>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
                 </div>
 
@@ -497,6 +515,7 @@
                                 <h2 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#contact-details-accordian" href="#collapse-phone">
                                         <span id="phone-icon" class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;Phone
+                                        &nbsp;<span class="caret"></span>
                                     </a>
                                 </h2>
                             </div>
@@ -512,6 +531,7 @@
                                 <h2 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#contact-details-accordian" href="#collapse-email">
                                         <span id="email-icon" class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Email
+                                        &nbsp;<span class="caret"></span>
                                     </a>
                                 </h2>
                             </div>
@@ -531,6 +551,7 @@
                                 <h2 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#banking-accordian" href="#collapse-banking">
                                         <span id="bank-icon" class="glyphicon glyphicon-piggy-bank"></span>&nbsp;&nbsp;Banking Details
+                                        &nbsp;<span class="caret"></span>
                                     </a>
                                 </h2>
                             </div>
@@ -545,7 +566,8 @@
                             <div class="panel-heading">
                                 <h2 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#banking-accordian" href="#collapse-snapscan">
-                                        <span id="snapscan-icon" class="glyphicon glyphicon-qrcode"></span>&nbsp;&nbsp;Snapscan
+                                        <span id="snapscan-icon" class="glyphicon glyphicon-qrcode"></span>&nbsp;&nbsp;SnapScan
+                                        &nbsp;<span class="caret"></span>
                                     </a>
                                 </h2>
                             </div>
@@ -556,11 +578,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><br><br>
 
-                <div id="map-container">
-                    <div id="map"></div>
-                </div>
+                <!--<div id="map-container">-->
+                    <!--<div id="map"></div>-->
+                <!--</div>-->
             </div>
         </div>
     </div>
@@ -580,6 +602,6 @@
     <script src="javascript/homeFunctions.js"></script>
     <script src="javascript/navbarDropdown.js"></script>
     <script type="text/javascript" src="javascript/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyBQu92UNjmjXhYd-eE0Xu-gIzws_b6LSGI"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyBQu92UNjmjXhYd-eE0Xu-gIzws_b6LSGI"></script>-->
 </body>
 </html>
