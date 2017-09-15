@@ -8,10 +8,13 @@
     <link href="styles/homeStyles-res.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap/js/jquery.min.js"></script>
-    <script src="parallax.js-1.4.2/parallax.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="parallax.js-1.4.2/parallax.min.js" type="text/javascript"></script>
 </head>
 <body>
+
+    <!-- NAVBAR -->
+
     <nav id="homeNav" class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -22,7 +25,7 @@
             <button id="collapse-btn" type="button" class="navbar-toggle" onclick="openNav()"><b>MENU</b></button>
             <div class="collapse navbar-collapse" id="navItems">
                 <ul id="nav-list" class="nav navbar-nav navbar-right">
-                    <li id="nav-about-us"><a href="#our-mission-title">About Us</a></li>
+                    <li id="nav-about-us"><a href="#service-visitor-row">About Us</a></li>
                     <li id="nav-events"><a href="#event-row">Events</a></li>
                     <li id="nav-activities"><a href="#activities-title">Get Connected</a></li>
                     <li id="nav-media"><a href="#media-title">Media</a></li>
@@ -34,6 +37,9 @@
     </nav>
 
     <div class="container-fluid">
+
+        <!-- WELCOME BANNER -->
+
         <div class="row">
             <div class="banner-container">
                 <div class="banner-image">
@@ -47,10 +53,13 @@
                     </div>
                 </div>
             </div>
+
+            <!-- SIDE NAVBAR -->
+
             <div id="sidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#service-visitor-row" onclick="closeNav()">Service Time</a>
-                <a href="#our-mission-title" onclick="closeNav()">About Us</a>
+                <a href="#service-visitor-row" onclick="closeNav()">About Us</a>
                 <a href="#event-row" onclick="closeNav()">Events</a>
                 <hr>
                 <a href="#visitor-row" onclick="closeNav()">Vistors</a>
@@ -59,40 +68,44 @@
                 <a href="#media-title" onclick="closeNav()">Media</a>
                 <hr>
                 <a href="#ministries-title" onclick="closeNav()">Ministries</a>
-                <a href="#affiliations-title" onclick="closeNav()">Global Family</a>
+                <a href="#affiliations-background" onclick="closeNav()">Global Family</a>
                 <hr>
                 <a href="#contact-title" onclick="closeNav()">Contact Us</a>
+                <a href="#faq-title" onclick="closeNav()">FAQs</a>
             </div>
         </div>
 
+        <!-- SERVICE TIME & LOCATION -->
+
         <div id="service-visitor-row" class="row">
             <div id="service-visitor-jumbo" class="jumbotron">
-                <div id="service-time-col" class="col-lg-6">
+                <div id="service-time-col" class="col-lg-6 col-md-6 col-xs-6">
                     <br><span id="time-icon" class="glyphicon glyphicon-time"></span>
-                    <h2>Service Time</h2>
+                    <h2 id="service-time-title">Service Time</h2>
                     <h3>Sundays - 9am</h3><br><br><br>
                 </div>
-                <div id="location-col" class="col-lg-6">
+                <div id="location-col" class="col-lg-6 col-md-6 col-xs-6">
                     <br>
                     <a id="loaction-icon" class="glyphicon glyphicon-map-marker"
                        href="https://www.google.co.za/maps/place/New+Creation+Family+Church/@-26.1143132,27.9779713,17z/
                         data=!3m1!4b1!4m5!3m4!1s0x1e9574da78d5c4ed:0xd66ca2e53f1688d7!8m2!3d-26.114318!4d27.98016?hl=en">
-                        <h2>Our location</h2>
+                        <h2 id="location-title">Our location</h2>
                         <h3>Click here</h3>
                     </a>
                 </div>
             </div>
         </div>
 
+        <!-- MISSION & VISION -->
+
         <div id="mission-row" class="row">
             <div id="mission-jumbo" class="jumbotron">
-
-                <div id="our-mission-col" class="col-lg-6">
+                <div id="our-mission-col" class="col-lg-6 col-md-6 col-xs-6">
                     <h2 id="our-mission-title"><b>Our Mission</b></h2><br>
                     <p id="our-mission-parag">Loving God,<br>
                     Loving Others,<br> Advancing His Kingdom.</p>
                 </div>
-                <div id="our-vision-col" class="col-lg-6">
+                <div id="our-vision-col" class="col-lg-6 col-md-6 col-xs-6">
                     <h2 id="our-vision-title"><b>Our Vision</b></h2><br>
                     <p id="our-vision-parag">To become His community,<br>to impact our community.</p><br>
                 </div>
@@ -102,6 +115,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- SEASONAL BANNER -->
+
         <div class="row">
             <a href="#welcome-banner" id="arrow-up-btn" class="btn btn-default">
                 <span id="arrow-up-icon" class="glyphicon glyphicon-menu-up"></span>
@@ -120,56 +136,25 @@
                 he is able to help those who are being tempted.</h1>
         </div>
 
+        <!-- EVENTS -->
+
         <div id="event-row" class="row">
             <div id="events-jumbo" class="jumbotron">
                 <h2 id="events-title">Events</h2>
                 <p class="border-sm"></p><br><br>
-                <div class="row event-card-row">
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/images/HC card.png">
-                            <div class="card-block">
-                                <!--<h4 class="card-title">Holiday Club</h4>-->
-                                <p class="card-text" style="font-size: 120%">Holiday Club is BIG kids event. for the year,where the kids come and learn in a fun environment</p>
-                                <a href="#" class="btn btn-default">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/images/Baby ded-card.png">
-                            <div class="card-block">
-                                <!--<h4 class="card-title">Church w/Baby Dedications</h4>-->
-                                <p class="card-text" style="font-size: 120%">Do you have a child to dedicate? during our service we take time to pray over the children and commit them to the Lord.</p>
-                                <a href="#" class="btn btn-default">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/images/Connect-card.png">
-                            <div class="card-block">
-                                <!--<h4 class="card-title">Connect Sunday</h4>-->
-                                <p class="card-text" style="font-size: 120%">If you've been visiting with us for a while and want to know more about NC, join us at at the connect table after the service to meet pastors and leaders.</p>
-                                <a href="#" class="btn btn-default">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
-                        <div class="card">
-                            <img class="card-img-top" src="assets/images/WE-Card.png">
-                            <div class="card-block">
-                                <!--<h4 class="card-title">Womens Conference</h4>-->
-                                <p class="card-text" style="font-size: 120%">Womens Conference, 12 August 2017, is a day for all the women to gather and grow together .</p>
-                                <a href="#" class="btn btn-default">Read more</a>
-                            </div>
-                        </div>
-                    </div>
+                <div id="cardEvents-dropzone1" class="row event-card-row">
+                    <!-- eventBuilder.js -->
                 </div>
-                <a id="see-all-event-btn" href="" class="btn btn-default"><h4>View All Events</h4></a>
+                <div id="cardEvents-dropzone2" class="row event-card-row">
+                    <!-- eventBuilder.js -->
+                </div>
+                <a id="see-more-event-btn" class="btn btn-default"><h4>View More Events</h4></a>
+                <a id="see-all-event-btn" href="" class="btn btn-default"><h4>See All Events</h4></a>
                 <p style="color: #fff">.</p>
             </div>
         </div>
+
+        <!-- VISITORS INFO -->
 
         <div id="visitor-row" class="row">
             <div class="visitor-content">
@@ -186,119 +171,26 @@
             <div id="visitor-banner" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/visitor-background.jpg"></div>
         </div>
 
+        <!-- GET CONNECTED -->
+
         <div id="activities-row" class="row">
             <div id="activities-jumbo" class="jumbotron">
                 <h2 id="activities-title">Get Connected</h2>
                 <p class="border-sm"></p><br><br>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" id="blur-nckidz" href="">
-                                <img id="nckidz-image" class="img-circle" src="assets/images/get-conn-nckidz.png" alt="nc kidz" width="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label" id="nckidz-label"><b>NC KIDZ</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" id="blur-exp" href="">
-                                <img id="exp-image" class="img-circle" src="assets/images/get-conn-youth.png" alt="youth" width="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label" id="exp-label"><b>EXPLOITS YOUTH</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" id="blur-ya" href="">
-                                <img id="youngadult-image" class="img-circle" src="assets/images/get-conn-YA.png" alt="young adults" width="300" height="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label" id="youngaduls-label"><b>YOUNG ADULTS</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" id="blur-lg" href="">
-                                <img id="lg-image" class="img-circle" src="assets/images/get-conn-lifegroups.png" alt="lifegroups" width="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label" id="lifegroups-label"><b>LIFE GROUPS</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" id="blur-men" href="">
-                                <img id="men-image" class="img-circle" src="assets/images/get-conn-men.png" alt="men" width="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label" id="men-label"><b>MEN</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" id="blur-women" href="">
-                                <img id="women-image" class="img-circle" src="assets/images/get-conn-women.png" alt="women" width="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label" id="women-label"><b>WOMEN</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" id="blur-mom" href="">
-                                <img id="mom-image" class="img-circle" src="assets/images/get-conn-moms-group.png" alt="moms group" width="300" height="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label" id="mom-label"><b>MOM'S GROUP</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" href="">
-                                <img class="img-circle" src="assets/images/get-conn-legends.png" alt="legends" width="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label"><b>LEGENDS</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" id="blur-hos" href="">
-                                <img id="hos-image" class="img-circle" src="assets/images/get-conn-creative.png" alt="creative" width="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label" id="hos-label"><b>CREATIVE</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 connect-col">
-                        <div class="connect-image">
-                            <a class="connect-link" href="">
-                                <img class="img-circle" src="assets/images/get-conn-hospitality.png" alt="hospitality" width="300">
-                                <div class="connect-text">
-                                    <h4 class="connect-label"><b>HOSPITALITY</b></h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+                <div id="get-connected-dropzone1" class="row">
+                    <!-- connectBuilder.js -->
+                </div>
+                <div id="get-connected-dropzone2" class="row">
+                    <!-- connectBuilder.js -->
                 </div>
                 <div class="activities-btn-container">
-                    <a id="activities-btn" href="" class="btn btn-default"><h4>Find out more</h4></a>
+                    <a id="activities-view-more-btn" class="btn btn-default"><h4>See More</h4></a>
+                    <a id="activities-find-more-btn" href="" class="btn btn-default"><h4>Find out more</h4></a>
                 </div>
             </div>
         </div>
+
+        <!-- MEDIA -->
 
         <div id="media-row" class="row">
             <h2 id="media-title"><b>Media</b><p class="border-sm" id="media-border-sm"></p><br><br></h2>
@@ -346,116 +238,88 @@
             <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/media-background3.jpeg" id="media-background"></div>
         </div>
 
+        <!-- MINISTRIES -->
+
         <div id="ministries-row" class="row">
             <div id="ministries-jumbo" class="jumbotron">
                 <h2 id="ministries-title">Ministries</h2>
                 <p class="border-sm"></p><br><br>
-
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="panel-group" id="tksrh-accordian">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#tksrh-accordian" href="#collapse-tksrh">
-                                        <img id="kings-logo" src="assets/logos/ksrh-logo.png" alt="kings school" width="290">
-                                        <br><br><b><span class="caret"></span></b>
-                                    </a>
-                                </h2>
-                            </div>
-                            <div id="collapse-tksrh" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <h3>Ministry Title</h3>
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque,
-                                        dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</h4>
-                                </div>
-                                <div class="panel-footer" href="#">
-                                    <button class="btn btn-default">Find out more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="panel-group" id="oasis-accordian">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#tksrh-accordian" href="#collapse-oasis">
-                                        <img id="oasis-logo" src="assets/logos/oasis-logo.png" alt="oasis haven" width="200">
-                                        <br><br><b><span class="caret"></span></b>
-                                    </a>
-                                </h2>
-                            </div>
-                            <div id="collapse-oasis" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <h3>Ministry Title</h3>
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque,
-                                        dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</h4>
-                                </div>
-                                <div class="panel-footer" href="#">
-                                    <button class="btn btn-default">Find out more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="panel-group" id="paradigm-accordian">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#paradigm-accordian" href="#collapse-paradigm">
-                                        <img id="paradigm-logo" src="assets/logos/paradigmshift-logo.jpg" alt="paradigm" width="150">
-                                        <br><br><b><span class="caret"></span></b>
-                                    </a>
-                                </h2>
-                            </div>
-                            <div id="collapse-paradigm" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <h3>Ministry Title</h3>
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque,
-                                        dolor et gravida suscipit, tellus libero malesuada erat, eget bibendum velit ante sed velit.</h4>
-                                </div>
-                                <div class="panel-footer" href="#">
-                                    <button class="btn btn-default">Find out more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="ministry-dropzone">
+                    <!-- ministryBuilder.js -->
                 </div>
                 <p id="ministries-footer" style="color: #fff">.</p>
             </div>
         </div>
 
+        <!-- GLOBAL FAMILY -->
+
         <div id="affiliations-row" class="row">
             <div id="affiliations-jumbo" class="jumbotron">
                 <h2 id="affiliations-title">Global Family</h2>
                 <p id="affiliations-border" class="border-sm"></p><br><br>
-                <div class="col-sm-4">
-                    <a href="https://www.cotn.org/" target="_blank">
-                        <img id="cotn-logo" src="assets/logos/cotnlogo.png" width="150">
-                    </a>
-                </div>
-                <div class="aff-content col-sm-8">
-                    <h4 id="affiliations-text" style="text-align: left">
-                        <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br>
-                        Nulla ex turpis, ullamcorper ac porta et, malesuada vitae orci.<br><br>
+                <div class="aff-content col-md-12">
+                    <h3 id="affiliations-text">
+                        <br><br>The Church of the Nations' is an international family of churches relating through love and commitment to see the Kingdom of God extended on earth.
+                        <br><br>Within the COTN's family, the heart that is in us determines what we all agree are our values, no matter where in the world we live and serve our Lord.<br><br>
                         <a href="https://www.cotn.org/" target="_blank" class="btn btn-default">
                             <span class="glyphicon glyphicon-globe"></span>&nbsp;Website
                         </a>
-                    </h4>
+                    </h3>
+                </div>
+                <div class="col-md-12">
+                    <div class="cotn-logo">
+                        <a href="https://www.cotn.org/" target="_blank">
+                            <img id="cotn-logo" src="assets/logos/cotnlogo.png" width="200" height="200">
+                        </a>
+                    </div>
                 </div>
                 <p id="affiliations-footer" style="color: #fff">.</p>
             </div>
-            <img id="affiliations-background" src="assets/images/global-family-bg.png">
+            <div id="affiliations-background" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/global-family-bg.png"></div>
         </div>
+
+        <!-- CONTACT US -->
 
         <div id="contact-row" class="row">
             <div id="contact-jumbo" class="jumbotron">
                 <h2 id="contact-title">Contact Us</h2>
-                <p class="border-sm"></p><br><br><br><br>
+                <p class="border-sm"></p><br><br>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="panel-group" id="contact-details-accordian">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#contact-details-accordian" href="#collapse-phone">
+                                        <span id="phone-icon" class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;Phone
+                                        &nbsp;<span class="caret"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-phone" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h4>011 792 1151<br>011 792 1380</h4><br><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#contact-details-accordian" href="#collapse-email">
+                                        <span id="email-icon" class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Email
+                                        &nbsp;<span class="caret"></span>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="collapse-email" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4>admin@newcreation.co.za</h4><br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="panel-group" id="address-accordian">
@@ -490,57 +354,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!--<div class="panel panel-default">-->
-                            <!--<div class="panel-heading">-->
-                                <!--<h2 class="panel-title">-->
-                                    <!--<a data-toggle="collapse" data-parent="#address-accordian" href="#collapse-postal">-->
-                                        <!--<span id="postal-icon" class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Postal Address-->
-                                    <!--</a>-->
-                                <!--</h2>-->
-                            <!--</div>-->
-                            <!--<div id="collapse-postal" class="panel-collapse collapse">-->
-                                <!--<div class="panel-body">-->
-                                    <!--<h4>P.O. Box 1638<br>Cresta<br>South Africa<br>2118</h4>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="panel-group" id="contact-details-accordian">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#contact-details-accordian" href="#collapse-phone">
-                                        <span id="phone-icon" class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;Phone
-                                        &nbsp;<span class="caret"></span>
-                                    </a>
-                                </h2>
-                            </div>
-                            <div id="collapse-phone" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <h4>011 792 1151<br>011 792 1380</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h2 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#contact-details-accordian" href="#collapse-email">
-                                        <span id="email-icon" class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Email
-                                        &nbsp;<span class="caret"></span>
-                                    </a>
-                                </h2>
-                            </div>
-                            <div id="collapse-email" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <h4>admin@newcreation.co.za</h4>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -557,7 +370,7 @@
                             </div>
                             <div id="collapse-banking" class="panel-collapse collapse in">
                                 <div class="panel-body">
-                                    <h4>First National Bank, Randburg<br>Branch Code: 254005<br>Account#: 50410005934</h4>
+                                    <h4>First National Bank, Randburg<br>Branch Code: 254005<br>Account#: 50410005934</h4><br>
                                 </div>
                             </div>
                         </div>
@@ -590,18 +403,17 @@
     <footer class="footer">
         <nav id="navbar-footer-home" class="navbar navbar-inverse">
             <div class="container">
-                <div class="navbar-header">
-                    <span class="navbar-brand">Footer goes here..</span>
-                </div>
-
-                <p class="navbar-text navbar-right">New Creation &copy; 2017</p>
+                <p class="navbar-text navbar-left">New Creation &copy; 2017</p>
             </div>
         </nav>
     </footer>
 
-    <script src="javascript/homeFunctions.js"></script>
-    <script src="javascript/navbarDropdown.js"></script>
-    <script type="text/javascript" src="javascript/map.js"></script>
+    <script src="javascript/eventBuilder.js" type="text/javascript"></script>
+    <script src="javascript/connectBuilder.js" type="text/javascript"></script>
+    <script src="javascript/ministryBuilder.js" type="text/javascript"></script>
+    <script src="javascript/homeFunctions.js" type="text/javascript"></script>
+    <script src="javascript/navbarDropdown.js" type="text/javascript"></script>
+    <!-- <script src="javascript/map.js" type="text/javascript"></script> -->
     <!--<script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyBQu92UNjmjXhYd-eE0Xu-gIzws_b6LSGI"></script>-->
 </body>
 </html>

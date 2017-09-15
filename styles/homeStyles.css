@@ -3,7 +3,15 @@
  */
 
 html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
+}
+
+.row .jumbotron {
+    border-radius: 0 !important;
 }
 
 h1, .jumbotron h1,
@@ -341,12 +349,13 @@ nav div ul li a {
 }
 
 #more-about-us-btn:hover,
-#activities-btn:hover,
-#see-all-event-btn:hover {
+#activities-find-more-btn:hover,
+#activities-view-more-btn:hover,
+#see-all-event-btn:hover,
+#see-more-event-btn:hover {
     background-color: #4cae4c;
     color: #fff;
     border-color: #67b168;
-
 }
 
 /*
@@ -409,8 +418,10 @@ nav div ul li a {
 }
 
 #listen-btn:hover{
-    background-color: #4cae4c;
-    border-color: #67b168;
+    background-color: #fff;
+    border-color: #f1f1f1;
+    color: #3c3c3c;
+    opacity: 0.9;
 }
 
 .seasonal-label-btn {
@@ -469,6 +480,11 @@ nav div ul li a {
     width: 100%;
 }
 
+.card-block {
+    height: 140px;
+    overflow: auto;
+}
+
 .card-block h4 {
     font-weight: bold;
 }
@@ -479,6 +495,10 @@ nav div ul li a {
 
 .card-text {
     margin-top: 8%;
+}
+
+.card-footer {
+    margin-bottom: 5%;
 }
 
 
@@ -498,12 +518,13 @@ nav div ul li a {
     z-index: 1;
     color: #fff;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .visitor-content a {
     background: transparent;
     color: #fff;
+    width: 70%;
 }
 
 .visitor-content a:hover {
@@ -511,10 +532,6 @@ nav div ul li a {
     border-color: #f1f1f1;
     color: #3c3c3c;
     opacity: 0.9;
-}
-
-.visitor-content a {
-    width: 70%;
 }
 
 #visitor-banner {
@@ -558,7 +575,8 @@ nav div ul li a {
     transition: 0.25s opacity linear;
 }
 
-#activities-btn {
+#activities-find-more-btn,
+#activities-view-more-btn {
     margin-top: 8%;
     margin-bottom: 10%;
 }
@@ -735,6 +753,7 @@ nav div ul li a {
 
 #ministries-row {
     z-index: 2;
+    margin-bottom: 10%;
 }
 
 #ministries-jumbo {
@@ -770,7 +789,7 @@ nav div ul li a {
 }
 
 #ministries-footer {
-    /*margin-bottom: 2%;*/
+    /*margin-bottom: 10%;*/
 }
 
 #navbar-footer-home.navbar.navbar-inverse {
@@ -814,6 +833,7 @@ nav div ul li a {
 }
 
 #affiliations-jumbo {
+    padding-top: 0;
     margin-top: -10%;
 }
 
@@ -834,21 +854,18 @@ nav div ul li a {
 }
 
 #affiliations-text {
-    margin-top: 50%;
+    margin-top: 30%;
+    text-align: center;
+}
+
+.cotn-logo {
+    text-align: center !important;
 }
 
 #cotn-logo {
     position: absolute;
-    margin-left: 40%;
-    margin-top: 90%;
-}
-
-#affiliations-background {
-    z-index: -2;
-    width: 100%;
-    position: relative;
-    min-height: 600px;
-    opacity: 0.32;
+    margin-top: 56%;
+    margin-left: -8%;
 }
 
 #affiliations-footer {

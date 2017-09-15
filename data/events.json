@@ -1,0 +1,15 @@
+{
+    "events": [{
+        "image": "HC card.png",
+        "shortDesc": "Holiday Club is BIG kids event for the year, where the kids come and learn in a fun environment"
+    },{
+        "image": "Baby ded-card.png",
+        "shortDesc": "Do you have a child to dedicate? During our service we take time to pray over the children and commit them to the Lord."
+    },{
+        "image": "Connect-card.png",
+        "shortDesc": "If you've been visiting with us for a while and want to know more about NC, join us at at the connect table after the service to meet pastors and leaders."
+    },{
+        "image": "WE-Card.png",
+        "shortDesc": "Womens Conference, 12 August 2017, is a day for all the women to gather and grow together."
+    }]
+}

@@ -1,0 +1,33 @@
+{
+    "connect": [{
+        "image": "get-conn-nckidz.png",
+        "label": "NC KIDZ"
+    },{
+        "image": "get-conn-youth.png",
+        "label": "EXPLOITS YOUTH"
+    },{
+        "image": "get-conn-lifegroups.png",
+        "label": "LIFE GROUPS"
+    },{
+        "image": "get-conn-hospitality.png",
+        "label": "HOSPITALITY"
+    },{
+        "image": "get-conn-men.png",
+        "label": "MEN"
+    },{
+        "image": "get-conn-women.png",
+        "label": "WOMEN"
+    },{
+        "image": "get-conn-moms-group.png",
+        "label": "MOM'S GROUP"
+    },{
+        "image": "get-conn-legends.png",
+        "label": "LEGENDS"
+    },{
+        "image": "get-conn-YA.png",
+        "label": "YOUNG ADULTS"
+    },{
+        "image": "get-conn-creative.png",
+        "label": "CREATIVE"
+    }]
+}

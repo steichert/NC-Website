@@ -13,7 +13,18 @@ $(document).ready(function() {
         if ($(window).scrollTop() >= offset) {
             $("#welcome-banner").css('margin-top','-19px');
             $("#nav-list").show();
-            $("#collapse-btn").hide();
+
+            if ($(window).width() > 414)
+                $("#collapse-btn").hide().css({
+                    'color':'#fff',
+                    'border-color':'#fff'
+                });
+            else {
+                $("#collapse-btn").show().css({
+                    'color':'#3c3c3c',
+                    'border-color':'#3c3c3c'
+                });
+            }
 
             setTimeout(function () {
                 $("#arrow-up-btn").css({'visibility': 'visible'});
@@ -41,17 +52,31 @@ $(document).ready(function() {
             }
         } else {
             $("#nav-list").hide();
-            $("#collapse-btn").show();
             $("#welcome-banner").css('margin-top', '-100px');
             $("#arrow-up-btn").css({'visibility': 'hidden'});
+
+            $("#collapse-btn").show().css({
+              'color':'#fff',
+              'border-color':'#fff'
+            });
 
             navbar.css('background', 'none');
 
             $("#nav-logo").css({
-                'height':'120px',
                 'color':'#fff',
                 'marginTop':'-10%'
             }).attr('src','assets/logos/nc%20logo%20full%20(TOP).png');
+
+            if ($(window).width() <= 414) {
+              $("#nav-logo").css({
+                'height':'80px'
+              });
+            }
+            else {
+              $("#nav-logo").css({
+                'height':'120px'
+              });
+            }
 
             $("nav div ul li a").css('color','#fff');
             $("nav div ul li").css('margin-top','2%');
